@@ -57,11 +57,11 @@
 	{#if mobileMenuOpen}
 		<div class="lg:hidden border-b border-[#22252A] bg-[#0B0C0E] px-4 pt-3 pb-6 space-y-3 shadow-2xl">
 			<nav class="flex flex-col space-y-1 font-mono text-xs uppercase tracking-wider text-[#8A919E]">
-				<a href="#ai-transformation" onclick={closeMenu} class="py-2.5 px-3 rounded-none hover:bg-[#16181D] hover:text-[#F4F5F6] transition-colors">AI Transformation</a>
-				<a href="#case-studies" onclick={closeMenu} class="py-2.5 px-3 rounded-none hover:bg-[#16181D] hover:text-[#F4F5F6] transition-colors">Case Studies</a>
-				<a href="#blog" onclick={closeMenu} class="py-2.5 px-3 rounded-none hover:bg-[#16181D] hover:text-[#F4F5F6] transition-colors">Blog</a>
-				<a href="#lab" onclick={closeMenu} class="py-2.5 px-3 rounded-none hover:bg-[#16181D] hover:text-[#F4F5F6] transition-colors">Lab</a>
-				<a href="#connect" onclick={closeMenu} class="py-2.5 px-3 rounded-none hover:bg-[#16181D] hover:text-[#F4F5F6] transition-colors">Connect</a>
+				<a href="#ai-transformation" onclick={closeMenu} class="py-2.5 px-3 min-h-[44px] flex items-center rounded-none hover:bg-[#16181D] hover:text-[#F4F5F6] transition-colors">AI Transformation</a>
+				<a href="#case-studies" onclick={closeMenu} class="py-2.5 px-3 min-h-[44px] flex items-center rounded-none hover:bg-[#16181D] hover:text-[#F4F5F6] transition-colors">Case Studies</a>
+				<a href="#blog" onclick={closeMenu} class="py-2.5 px-3 min-h-[44px] flex items-center rounded-none hover:bg-[#16181D] hover:text-[#F4F5F6] transition-colors">Blog</a>
+				<a href="#lab" onclick={closeMenu} class="py-2.5 px-3 min-h-[44px] flex items-center rounded-none hover:bg-[#16181D] hover:text-[#F4F5F6] transition-colors">Lab</a>
+				<a href="#connect" onclick={closeMenu} class="py-2.5 px-3 min-h-[44px] flex items-center rounded-none hover:bg-[#16181D] hover:text-[#F4F5F6] transition-colors">Connect</a>
 			</nav>
 			<div class="pt-2">
 				<LinkedInConnectButton variant="navbar" class="w-full justify-center" text="Connect on LinkedIn" showArrow={true} />

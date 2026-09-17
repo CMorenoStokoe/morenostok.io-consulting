@@ -3,6 +3,12 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { PROFILE_DATA } from '$lib/data/profile';
+	import { dev } from '$app/environment';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+
+	injectAnalytics({ mode: dev ? 'development' : 'production' });
+	injectSpeedInsights();
 
 	let { children } = $props();
 

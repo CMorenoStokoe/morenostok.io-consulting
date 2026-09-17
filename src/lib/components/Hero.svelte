@@ -6,18 +6,18 @@
 
 <section class="relative pt-12 pb-14 sm:pt-20 sm:pb-16 md:pt-28 md:pb-24 bg-[#0B0C0E] border-b border-[#22252A]">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-		<div class="flex flex-col md:flex-row items-start gap-8 lg:gap-12">
+		<div class="flex flex-col md:flex-row items-start gap-6 sm:gap-8 lg:gap-12">
 			<!-- Photo to the left of title section in Palantir style -->
 			<div class="shrink-0 border border-[#22252A] bg-[#131518] p-1">
 				<img
 					src="/images/chris-moreno-stokoe.jpg"
 					alt="Dr. Chris Moreno-Stokoe"
-					class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-cover rounded-none grayscale contrast-[1.05]"
+					class="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-56 lg:h-56 object-cover rounded-none grayscale contrast-[1.05]"
 				/>
 			</div>
 
-			<div class="max-w-4xl space-y-5 sm:space-y-6 flex-1">
-				<h1 class="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-medium text-[#F4F5F6] leading-[1.12] sm:leading-[1.08] tracking-tight">
+			<div class="max-w-4xl space-y-4 sm:space-y-6 flex-1">
+				<h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-medium text-[#F4F5F6] leading-[1.14] sm:leading-[1.08] tracking-tight">
 					C-Suite AI Advisory & Global Engineering Leadership
 				</h1>
 

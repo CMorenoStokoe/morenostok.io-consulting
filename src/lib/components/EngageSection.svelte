@@ -108,9 +108,9 @@ END:VCARD`;
 							href={PROFILE_DATA.channels.linkedIn}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="flex items-center justify-center gap-2 p-2.5 rounded-none border border-slate-200 bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-colors min-h-[44px]"
+							class="flex items-center justify-center gap-2 p-2.5 rounded-none border border-slate-900 bg-slate-900 text-white hover:bg-slate-800 transition-colors min-h-[44px] shadow-xs"
 						>
-							<LinkedinIcon class="w-4 h-4 text-slate-700 shrink-0" />
+							<LinkedinIcon class="w-4 h-4 text-white shrink-0" />
 							<span>LinkedIn</span>
 						</a>
 

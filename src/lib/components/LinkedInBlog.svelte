@@ -24,6 +24,16 @@
 		}
 	}
 
+	function selectArticle(index: number) {
+		activeArticleIndex = index;
+		if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+			const el = document.getElementById('article-reader');
+			if (el) {
+				el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			}
+		}
+	}
+
 	onMount(() => {
 		fetchLatestFeed();
 	});
@@ -138,7 +148,7 @@
 						{#each articles as article, index}
 							<button
 								type="button"
-								onclick={() => (activeArticleIndex = index)}
+								onclick={() => selectArticle(index)}
 								class="w-full text-left p-4 rounded-none border transition-all min-h-[44px] {activeArticleIndex === index ? 'bg-[#fafaf9] border-slate-900 shadow-xs ring-1 ring-slate-900/10' : 'bg-white border-slate-200 hover:bg-[#fafaf9] text-slate-700'}"
 							>
 								<div class="flex items-center justify-between font-mono text-[10px] uppercase tracking-wider mb-1.5">
@@ -158,7 +168,7 @@
 					</div>
 
 					<!-- Article Reading Panel Right (pure API content) -->
-					<div class="lg:col-span-7 bg-[#fafaf9] rounded-none border border-slate-200 p-5 sm:p-7 lg:p-8 space-y-6 shadow-xs">
+					<div id="article-reader" class="lg:col-span-7 bg-[#fafaf9] rounded-none border border-slate-200 p-5 sm:p-7 lg:p-8 space-y-6 shadow-xs scroll-mt-20">
 						<!-- Article Header -->
 						<div class="border-b border-slate-200 pb-4">
 							<div class="flex items-center justify-between font-mono text-xs text-slate-500 mb-2">
