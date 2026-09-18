@@ -1,76 +1,96 @@
 <script lang="ts">
-	import { ArrowRight } from '@lucide/svelte';
 	import { PROFILE_DATA } from '$lib/data/profile';
-	import LinkedInConnectButton from '$lib/components/LinkedInConnectButton.svelte';
 </script>
 
-<section class="relative pt-12 pb-14 sm:pt-20 sm:pb-16 md:pt-28 md:pb-24 bg-[#0B0C0E] border-b border-[#22252A]">
+<section class="relative pt-10 pb-12 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20 bg-black border-b border-[#262626]">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+		<!-- Outside-IR35 Status & Compliance Badges -->
+		<div class="flex flex-wrap items-center gap-2 sm:gap-2.5 font-mono text-[10px] sm:text-xs tracking-wider mb-6 sm:mb-8">
+			<span class="border border-white bg-white text-black px-2.5 py-1 font-bold">
+				[STATUS: OUTSIDE-IR35]
+			</span>
+			<span class="border border-[#333333] bg-[#0A0A0A] text-[#CCCCCC] px-2.5 py-1">
+				[MODEL: SOW / DELIVERABLES]
+			</span>
+			<span class="border border-[#333333] bg-[#0A0A0A] text-[#CCCCCC] px-2.5 py-1">
+				[CAPACITY: FRACTIONAL & SPRINT]
+			</span>
+		</div>
+
 		<div class="flex flex-col md:flex-row items-start gap-6 sm:gap-8 lg:gap-12">
-			<!-- Photo to the left of title section in Palantir style -->
-			<div class="shrink-0 border border-[#22252A] bg-[#131518] p-1">
+			<!-- Photo to the left of title section in stark Palantir wireframe style -->
+			<div class="shrink-0 border border-[#333333] bg-[#0A0A0A] p-1 shadow-2xs">
 				<img
 					src="/images/chris-moreno-stokoe.jpg"
 					alt="Dr. Chris Moreno-Stokoe"
-					class="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-56 lg:h-56 object-cover rounded-none grayscale contrast-[1.05]"
+					class="w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 object-cover rounded-none grayscale contrast-[1.10]"
 				/>
 			</div>
 
-			<div class="max-w-4xl space-y-4 sm:space-y-6 flex-1">
-				<h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-medium text-[#F4F5F6] leading-[1.14] sm:leading-[1.08] tracking-tight">
-					C-Suite AI Advisory & Global Engineering Leadership
-				</h1>
-
-				<p class="text-base sm:text-lg lg:text-xl text-[#8A919E] leading-relaxed font-normal max-w-3xl pt-1">
-					Pioneering AI systems since the very beginning of GenAI in 2022.
-				</p>
-
-				<div class="pt-2 text-xs sm:text-sm font-mono text-[#8A919E] flex flex-wrap items-center gap-x-3 gap-y-1.5 leading-snug">
-					<span>Lead AI Engineer @ Verition Fund Management</span>
-					<span class="text-[#22252A] hidden sm:inline">•</span>
-					<span>AI Team Founder @ PwC</span>
-					<span class="text-[#22252A] hidden sm:inline">•</span>
-					<span>Digital Transformation & Research @ NHS</span>
-					<span class="text-[#22252A] hidden sm:inline">•</span>
-					<span>PhD Human-Computer Engineering</span>
+			<div class="max-w-4xl space-y-4 sm:space-y-5 flex-1">
+				<div class="space-y-2">
+					<h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-[1.12] sm:leading-[1.06] tracking-tight">
+						Principal Technical Consultant & Systems Architect
+					</h1>
+					<p class="text-xs sm:text-sm font-mono uppercase tracking-widest text-[#A3A3A3]">
+						Dr. Chris Moreno-Stokoe • PhD Human-Computer Interaction
+					</p>
 				</div>
 
-				<!-- Mobile: full-width buttons; Desktop: inline -->
+				<p class="text-base sm:text-lg lg:text-xl text-[#E5E5E5] leading-relaxed font-normal max-w-3xl">
+					Advising executive leadership on GenAI strategy while actively architecting and deploying observable, high-throughput systems.
+				</p>
+
+				<div class="pt-1 text-xs sm:text-sm font-mono text-[#CCCCCC] flex flex-wrap items-center gap-x-3 gap-y-1.5 leading-snug">
+					<span>Lead AI Engineer @ Verition Fund Management</span>
+					<span class="text-[#404040] hidden sm:inline">•</span>
+					<span>AI Team Founder @ PwC</span>
+					<span class="text-[#404040] hidden sm:inline">•</span>
+					<span>Digital Transformation & Research @ NHS</span>
+					<span class="text-[#404040] hidden sm:inline">•</span>
+					<span>Bristol PhD Data Intelligence</span>
+				</div>
+
+				<div class="pt-1 text-xs font-mono text-[#A3A3A3]">
+					Engagements operate strictly Outside IR35 via milestone-based Statements of Work (SOWs) and concrete architectural deliverables.
+				</div>
+
+				<!-- Segmented Technical CTAs -->
 				<div class="pt-3 sm:pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-					<LinkedInConnectButton size="lg" variant="hero" text="Connect on LinkedIn" showArrow={true} />
+					<a
+						href="#connect"
+						class="inline-flex items-center justify-center gap-2 rounded-none bg-white text-black font-mono text-xs font-bold uppercase tracking-widest px-6 py-3.5 border border-white hover:bg-black hover:text-white transition-all min-h-[48px]"
+					>
+						[ INITIATE STRATEGIC REVIEW ]
+					</a>
 
 					<a
-						href="#case-studies"
-						class="inline-flex items-center justify-center gap-2 rounded-none border border-[#22252A] bg-transparent px-7 py-3.5 font-mono text-xs font-semibold uppercase tracking-wider text-[#F4F5F6] transition-all hover:border-white hover:text-white min-h-[48px]"
+						href="#connect"
+						class="inline-flex items-center justify-center gap-2 rounded-none bg-transparent text-white font-mono text-xs font-semibold uppercase tracking-widest px-6 py-3.5 border border-[#404040] hover:border-white hover:bg-[#111111] transition-all min-h-[48px]"
 					>
-						View Case Studies
+						[ SCOPE RAPID POC SPRINT (OUTSIDE IR35) ]
 					</a>
 				</div>
 			</div>
 		</div>
 
-		<!-- 4-Metric Bar: 2 cols on mobile, 4 on desktop -->
-		<div class="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-[#22252A] grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-			<div class="space-y-1">
-				<div class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-[#F4F5F6]">$1M+/yr</div>
-				<div class="font-mono text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#8A919E]">Average Annual Savings</div>
-				<div class="text-[11px] sm:text-xs text-[#8A919E]/80 leading-snug">Delivered through custom AI replacements and process efficiencies.</div>
-			</div>
-			<div class="space-y-1">
-				<div class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-[#F4F5F6]">2 Teams</div>
-				<div class="font-mono text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#8A919E]">100% Retention</div>
-				<div class="text-[11px] sm:text-xs text-[#8A919E]/80 leading-snug">Built 2 global AI capabilities from the ground up with zero attrition.</div>
-			</div>
-			<div class="space-y-1">
-				<div class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-[#F4F5F6]">15+</div>
-				<div class="font-mono text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#8A919E]">Products Under Management</div>
-				<div class="text-[11px] sm:text-xs text-[#8A919E]/80 leading-snug">Production GenAI workflows, financial data tools, and agent pipelines.</div>
-			</div>
-			<div class="space-y-1">
-				<div class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-[#F4F5F6]">4 Years</div>
-				<div class="font-mono text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#8A919E]">GenAI Leadership</div>
-				<div class="text-[11px] sm:text-xs text-[#8A919E]/80 leading-snug">Continually evaluating and preparing for the future of AI.</div>
-			</div>
+		<!-- Contextualized Operational Scale Metric Bar (Wireframe Grid) -->
+		<div class="mt-10 sm:mt-14 pt-6 sm:pt-8 border-t border-[#262626] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+			{#each PROFILE_DATA.headlineStats as stat}
+				<div class="border border-[#262626] bg-[#0A0A0A] p-4 sm:p-5 flex flex-col justify-between space-y-2">
+					<div class="space-y-1">
+						<div class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-white tracking-tight">
+							{stat.value}
+						</div>
+						<div class="font-mono text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#CCCCCC]">
+							{stat.label}
+						</div>
+					</div>
+					<div class="text-[11px] sm:text-xs text-[#A3A3A3] leading-relaxed border-t border-[#1C1C1C] pt-2">
+						{stat.detail}
+					</div>
+				</div>
+			{/each}
 		</div>
 	</div>
 </section>

@@ -16,6 +16,18 @@ export interface PracticeArea {
 	iconName: string;
 }
 
+export interface CoreOffering {
+	pillarNumber: string;
+	title: string;
+	tagline: string;
+	commercialModel: string;
+	rateDetail: string;
+	scope: string[];
+	deliverables: string[];
+	ctaLabel: string;
+	ctaAction: 'advisory' | 'poc';
+}
+
 export interface CaseStudy {
 	id: string;
 	organization: string;
@@ -67,13 +79,19 @@ export interface EngagementTier {
 
 export const PROFILE_DATA = {
 	name: 'Dr. Chris Moreno-Stokoe',
-	title: 'C-Suite AI Advisory & Global Engineering Leadership',
+	title: 'Principal Technical Consultant & Systems Architect',
 	shortBio:
-		'Pioneering AI systems since the very beginning of GenAI in 2022.',
+		'Advising executive leadership on GenAI strategy while actively architecting and deploying observable, high-throughput systems.',
 	extendedBio:
-		'Operating at the leading edge of Generative AI since 2022. Known for embedded Forward-Deployed Engineering - parachuting into complex front-office, trading, and mission-critical teams to build observable, auditable AI platforms that turn high-latency bottlenecks into sub-second advantages.',
+		'Operating at the leading edge of Generative AI since 2022. Known for hands-on technical consulting and systems architecture - advising C-suite leadership while embedding alongside front-line engineers and quantitative desks to build observable, auditable AI platforms that turn high-latency bottlenecks into sub-second advantages.',
 	location: 'London, UK / Global Remote',
 	credentialsHighlight: 'Lead AI Engineer @ Verition Fund Management • AI Team Founder @ PwC • Digital Transformation & Research @ NHS • PhD Human-Computer Engineering',
+	contracting: {
+		status: 'OUTSIDE-IR35',
+		model: 'SOW / DELIVERABLES',
+		capacity: 'FRACTIONAL & SPRINT',
+		complianceNote: 'All engagements operate strictly Outside IR35 via outcome-driven Statements of Work (SOWs), clear milestones, and concrete deliverables.'
+	},
 	education: [
 		{
 			degree: 'PhD Human-Computer Interaction',
@@ -103,26 +121,89 @@ export const PROFILE_DATA = {
 	},
 	headlineStats: [
 		{
-			value: '$1M+/yr',
-			label: 'Average Annual Savings',
-			detail: 'Delivered through custom AI replacements and process efficiencies.'
+			value: '£1M+/yr',
+			label: 'Vendor Spend Displaced',
+			detail: 'Displaced legacy vendor BI tooling across front-office trading and risk desks with in-memory OLAP pipelines.'
 		},
 		{
-			value: '2 Teams',
-			label: '100% Retention',
-			detail: 'Built 2 global AI capabilities from the ground up with zero attrition.'
+			value: '1M+ Records',
+			label: 'Sub-Second Latency',
+			detail: 'High-throughput indexing pipelines processing 1M+ daily market filings and records with sub-400ms query times.'
 		},
 		{
-			value: '15+',
-			label: 'Products Under Management',
-			detail: 'Production GenAI workflows, financial data tools, and agent pipelines.'
+			value: '2 Global Pods',
+			label: '100% Team Retention',
+			detail: 'Built and scaled 2 institutional AI engineering capabilities from 0-to-1 at PwC and buy-side fund with zero attrition.'
 		},
 		{
-			value: '4 Years',
-			label: 'GenAI Leadership',
-			detail: 'Continually evaluating and preparing for the future of AI.'
+			value: '4+ Years',
+			label: 'Production GenAI Systems',
+			detail: 'Continuous hands-on architecture, evaluation, and deployment of enterprise LLM/agent platforms since early 2022.'
 		}
 	] as Metric[],
+
+	coreOfferings: [
+		{
+			pillarNumber: '01',
+			title: 'GenAI Strategy & Advisory',
+			tagline: 'Technical stack audits, build-vs-buy evaluations, cost/latency feasibility models, and executive roadmaps.',
+			commercialModel: '£1,000 / Day',
+			rateDetail: 'Available as fractional / part-time strategic retainers',
+			scope: [
+				'Technical stack audits and architectural maturity assessments',
+				'Build-vs-buy evaluations for enterprise LLM and agent frameworks',
+				'Cost, token economics, and query latency feasibility models',
+				'Data governance, security perimeter, and compliance roadmaps'
+			],
+			deliverables: [
+				'Target-state architectural blueprints',
+				'Prioritized 90-day technical roadmaps',
+				'Model risk and vendor diligence audits'
+			],
+			ctaLabel: '[ INITIATE STRATEGIC REVIEW ]',
+			ctaAction: 'advisory'
+		},
+		{
+			pillarNumber: '02',
+			title: 'Production Architecture',
+			tagline: 'Resilient LLM/agent pipelines, scalable RAG architectures, and low-latency API topologies.',
+			commercialModel: '£1,000 / Day',
+			rateDetail: 'Milestone-based SOW deliverables',
+			scope: [
+				'Resilient multi-agent orchestration and workflow execution engines',
+				'Scalable RAG architectures with deterministic citation guardrails',
+				'Graph and vector database topology with in-memory OLAP acceleration',
+				'Low-latency API layers and enterprise Model Context Protocol (MCP) servers'
+			],
+			deliverables: [
+				'Production technical specifications and data schemas',
+				'Infrastructure-as-code and deployment topologies',
+				'Observability and zero-leakage telemetry harnesses'
+			],
+			ctaLabel: '[ INITIATE STRATEGIC REVIEW ]',
+			ctaAction: 'advisory'
+		},
+		{
+			pillarNumber: '03',
+			title: 'Rapid PoCs & Build-Out',
+			tagline: '2 to 4 week fast technical validation sprints delivered by an elite hands-on delivery pod.',
+			commercialModel: '£500 / Day',
+			rateDetail: 'Blended consultancy delivery rate (2 to 4 week sprints)',
+			scope: [
+				'2 to 4 week fast technical validation sprints',
+				'Hands-on delivery pod combining Principal architectural leadership with a dedicated implementation engineer',
+				'De-risking high-value AI hypotheses before major CapEx commitment',
+				'Direct embedding into existing codebases and cloud infrastructure'
+			],
+			deliverables: [
+				'Functional working deployment in staging or production',
+				'Production-grade codebase handoff with full test coverage',
+				'Technical documentation and operational runbooks'
+			],
+			ctaLabel: '[ SCOPE RAPID POC SPRINT (OUTSIDE IR35) ]',
+			ctaAction: 'poc'
+		}
+	] as CoreOffering[],
 
 	practiceAreas: [
 		{
@@ -222,8 +303,8 @@ export const PROFILE_DATA = {
 			challenge: 'Portfolio managers, risk officers, and executive desks faced severe data bottlenecks from overnight Bloomberg chats, SEC filings, and 30-to-60 second relational query latencies.',
 			solution: 'Engineered Visor: a full-stack "Tableau replacement" data intelligence app deployed across Risk, PnL, Treasury & front-office. Architected front-office equity market data AI retrieving and processing SEC EDGAR filings with citations, automated PM email and Bloomberg chat synthesis flows (including morning audio podcast catch-ups), and high-performance DuckDB pipelines.',
 			impact: [
-				'Slashed total query latency from 30s to 0.4s (<250ms) for instant conversational AI response',
-				'Displaced legacy enterprise BI vendor tooling, delivering $1M+/yr in efficiency gains',
+				'Processed 1M+ daily market transactions and SEC filing records with sub-400ms query latency (reduced from 30s)',
+				'Displaced legacy enterprise BI vendor tooling, delivering £1M+/yr in annual licensing and infrastructure savings',
 				'Full buy-side adoption across Risk, PnL, Treasury, and executive decision-makers'
 			],
 			techStack: ['DuckDB', 'D3.js', 'SvelteKit', 'Electron', 'Python', 'AWS']
@@ -238,8 +319,8 @@ export const PROFILE_DATA = {
 			challenge: 'The firm needed secure, multi-model LLM access with strict auditability, deterministic guardrails, centralized tool discovery (Model Garden), and role-based connectivity to internal market data without cloud data leakage.',
 			solution: 'Engineered the firm\'s internal ChatGPT application and centralized enterprise AI platform API (Verition Chat & Model Garden) with connected Model Context Protocol (MCP) servers and permissioned HTTP/S proxy iFrames, giving quantitative analysts and operators private, compliant access to proprietary tools, models, and internal AI agents.',
 			impact: [
-				'Handled 60,000 messages in first 3 months of deployment with 0.5% downtime (vs. 5% company average)',
-				'Integrated Model Garden boosting internal AI tool discovery and staff awareness from 5% to 75%',
+				'Handled 60,000+ enterprise queries across 500+ active users with 99.5% uptime (vs. 5% company downtime baseline)',
+				'Integrated Model Garden boosting internal AI tool discovery and firm-wide adoption from 5% to 75%',
 				'Zero cloud data leakage with comprehensive audit logging across prompts, tokens, and MCP tool calls',
 				'Established firm-wide AI documentation, UI design standards, and high-availability deployment across trading, risk, and operations'
 			],
@@ -255,9 +336,9 @@ export const PROFILE_DATA = {
 			challenge: 'PwC Operate partners and resource managers spent up to 8 hours per project role manually combing through spreadsheets and CV repositories to staff engagements across thousands of practitioners.',
 			solution: 'Engineered the PwC Resource Searcher (PwC "LinkedIn"): an enterprise-grade data product used by a 4,000-person business unit to match appropriate resources with client projects using talent intelligence algorithms and high-velocity search pipelines.',
 			impact: [
-				'Reduced time to fill a project role from 8 hours down to 2 hours (75% faster staffing turnaround)',
-				'Generated ~$1M in annual billed revenue by building AI apps focusing on streamlining human processes',
-				'Scaled internal AI community from scratch to 200+ active practitioners across the firm'
+				'High-throughput talent matching pipeline indexing 4,000+ practitioners, reducing staffing turnaround from 8 hours down to 2 hours (75% reduction)',
+				'Generated £1M+ in annual billed revenue by deploying custom AI apps focusing on streamlining human operational workflows',
+				'Scaled internal AI engineering community from scratch to 200+ active practitioners across the firm'
 			],
 			techStack: ['React', 'GCP', 'BigQuery', 'Google Apps Script', 'JavaScript']
 		}

@@ -7,31 +7,31 @@
 	}
 </script>
 
-<footer class="border-t border-slate-200 bg-white py-10 sm:py-12 text-slate-600 text-xs font-mono">
+<footer class="border-t border-[#262626] bg-black py-10 sm:py-12 text-[#A3A3A3] text-xs font-mono">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-		<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b border-slate-100">
+		<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b border-[#1C1C1C]">
 			<div class="space-y-1">
-				<div class="text-slate-900 font-bold text-sm uppercase tracking-wider font-display">
+				<div class="text-white font-bold text-sm uppercase tracking-widest font-display">
 					{PROFILE_DATA.name}
 				</div>
-				<p class="text-xs text-slate-500 font-normal font-mono">
-					London, United Kingdom • Strategic AI Advisory & Forward-Deployed Practice
+				<p class="text-xs text-[#888888] font-normal font-mono">
+					London, United Kingdom • Principal Technical Consultant & Systems Architect
 				</p>
 			</div>
 
-			<div class="flex flex-wrap items-center gap-4 sm:gap-5 text-xs font-mono uppercase tracking-wider text-slate-600">
-				<a href="#ai-transformation" class="hover:text-slate-900 py-1">AI Transformation</a>
-				<a href="#case-studies" class="hover:text-slate-900 py-1">Case Studies</a>
-				<a href="#blog" class="hover:text-slate-900 py-1">Blog</a>
-				<a href="#lab" class="hover:text-slate-900 py-1">Lab</a>
-				<a href="#connect" class="hover:text-slate-900 py-1">Connect</a>
+			<div class="flex flex-wrap items-center gap-4 sm:gap-6 text-xs font-mono uppercase tracking-wider text-[#CCCCCC]">
+				<a href="#offerings" class="hover:text-white py-1">Offerings</a>
+				<a href="#case-studies" class="hover:text-white py-1">Case Studies</a>
+				<a href="#blog" class="hover:text-white py-1">Perspectives</a>
+				<a href="#lab" class="hover:text-white py-1">Lab</a>
+				<a href="#connect" class="hover:text-white py-1">Connect</a>
 			</div>
 
 			<div>
 				<button
 					type="button"
 					onclick={scrollToTop}
-					class="inline-flex items-center gap-1.5 rounded-none border border-slate-200 bg-[#fafaf9] px-3.5 py-2 font-mono text-xs font-semibold uppercase tracking-wider text-slate-700 hover:bg-slate-100 transition-all min-h-[44px]"
+					class="inline-flex items-center gap-1.5 rounded-none border border-[#333333] hover:border-white bg-[#0A0A0A] hover:bg-white text-white hover:text-black px-3.5 py-2 font-mono text-xs font-semibold uppercase tracking-wider transition-all min-h-[44px] cursor-pointer"
 				>
 					Top
 					<ArrowUp class="w-3 h-3" />
@@ -39,16 +39,16 @@
 			</div>
 		</div>
 
-		<div class="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-500">
-			<div>© {new Date().getFullYear()} Dr. Chris Moreno-Stokoe. All rights reserved.</div>
+		<div class="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-[#888888]">
+			<div>© {new Date().getFullYear()} Dr. Chris Moreno-Stokoe. Operating strictly Outside IR35.</div>
 			<div class="flex items-center gap-3 sm:gap-4 font-medium">
-				<a href="/sitemap.xml" class="hover:text-slate-900 py-1">Sitemap</a>
-				<span class="text-slate-300">•</span>
-				<a href="/robots.txt" class="hover:text-slate-900 py-1">Robots</a>
-				<span class="text-slate-300">•</span>
-				<a href={PROFILE_DATA.channels.github} target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 py-1">GitHub</a>
-				<span class="text-slate-300">•</span>
-				<a href={PROFILE_DATA.channels.linkedIn} target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 py-1">LinkedIn</a>
+				<a href="/sitemap.xml" class="hover:text-white py-1">Sitemap</a>
+				<span class="text-[#333333]">•</span>
+				<a href="/robots.txt" class="hover:text-white py-1">Robots</a>
+				<span class="text-[#333333]">•</span>
+				<a href={PROFILE_DATA.channels.github} target="_blank" rel="noopener noreferrer" class="hover:text-white py-1">GitHub</a>
+				<span class="text-[#333333]">•</span>
+				<a href={PROFILE_DATA.channels.linkedIn} target="_blank" rel="noopener noreferrer" class="hover:text-white py-1">LinkedIn</a>
 			</div>
 		</div>
 	</div>

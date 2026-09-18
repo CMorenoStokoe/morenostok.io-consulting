@@ -1,14 +1,23 @@
 <script lang="ts">
 	import './layout.css';
+	import { onMount } from 'svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { PROFILE_DATA } from '$lib/data/profile';
 	import { dev } from '$app/environment';
-	import { injectAnalytics } from '@vercel/analytics/sveltekit';
-	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
-	injectAnalytics({ mode: dev ? 'development' : 'production' });
-	injectSpeedInsights();
+	onMount(async () => {
+		try {
+			const [{ injectAnalytics }, { injectSpeedInsights }] = await Promise.all([
+				import('@vercel/analytics/sveltekit'),
+				import('@vercel/speed-insights/sveltekit')
+			]);
+			injectAnalytics({ mode: dev ? 'development' : 'production' });
+			injectSpeedInsights();
+		} catch (error) {
+			console.debug('Telemetry initialization skipped or blocked:', error);
+		}
+	});
 
 	let { children } = $props();
 
