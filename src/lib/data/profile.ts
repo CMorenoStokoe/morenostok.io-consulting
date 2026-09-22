@@ -54,6 +54,7 @@ export interface PortfolioProject {
 	status: 'Live' | 'Coming Soon' | 'Private Repository';
 	url?: string;
 	githubUrl?: string;
+	image?: string;
 	links?: ProjectLink[];
 	highlights: string[];
 }
@@ -87,10 +88,10 @@ export const PROFILE_DATA = {
 	location: 'London, UK / Global Remote',
 	credentialsHighlight: 'Lead AI Engineer @ Verition Fund Management • AI Team Founder @ PwC • Digital Transformation & Research @ NHS • PhD Human-Computer Engineering',
 	contracting: {
-		status: 'OUTSIDE-IR35',
+		status: 'OUTSIDE-IR35-COMPLIANT',
 		model: 'SOW / DELIVERABLES',
 		capacity: 'FRACTIONAL & SPRINT',
-		complianceNote: 'All engagements operate strictly Outside IR35 via outcome-driven Statements of Work (SOWs), clear milestones, and concrete deliverables.'
+		complianceNote: 'All engagements are Outside IR35 compliant via outcome-driven Statements of Work (SOWs), clear milestones, and concrete deliverables.'
 	},
 	education: [
 		{
@@ -137,8 +138,8 @@ export const PROFILE_DATA = {
 		},
 		{
 			value: '4+ Years',
-			label: 'DATA SOVEREIGNTY',
-			detail: 'Deploying secure, private AI infrastructure preventing cloud leakage.'
+			label: 'LEADING GENAI TEAMS',
+			detail: 'Founding and leading elite AI divisions at the forefront of next-gen solutions.'
 		}
 	] as Metric[],
 
@@ -288,7 +289,7 @@ export const PROFILE_DATA = {
 			id: 'verition-visor',
 			organization: 'Verition Fund Management',
 			role: 'Lead Engineer, AI Team',
-			period: '2023 - Present',
+			period: '2023 - 2026',
 			location: 'London',
 			title: 'Verition VISOR: Front-Office Data Intelligence & Sub-Second Analytics',
 			challenge: 'Portfolio managers, risk officers, and executive desks faced severe data bottlenecks from overnight Bloomberg chats, SEC filings, and 30-to-60 second relational query latencies.',
@@ -304,7 +305,7 @@ export const PROFILE_DATA = {
 			id: 'verition-chat',
 			organization: 'Verition Fund Management',
 			role: 'Lead Engineer & AI Architecture Lead',
-			period: '2023 - Present',
+			period: '2023 - 2026',
 			location: 'London',
 			title: 'Verition AI Platform: Enterprise LLM Infrastructure, Connected MCPs & Model Garden',
 			challenge: 'The firm needed secure, multi-model LLM access with strict auditability, deterministic guardrails, centralized tool discovery (Model Garden), and role-based connectivity to internal market data without cloud data leakage.',
@@ -320,8 +321,8 @@ export const PROFILE_DATA = {
 		{
 			id: 'pwc-linkedin',
 			organization: 'PwC UK',
-			role: 'Founder & Lead Engineer, AI Team',
-			period: '2022 - 2023',
+			role: 'Founding Lead AI Engineer (Operate)',
+			period: '2022',
 			location: 'London & Belfast',
 			title: 'PwC "LinkedIn": Enterprise Resource Searcher & Talent Matching',
 			challenge: 'PwC Operate partners and resource managers spent up to 8 hours per project role manually combing through spreadsheets and CV repositories to staff engagements across thousands of practitioners.',
@@ -337,41 +338,44 @@ export const PROFILE_DATA = {
 
 	portfolioProjects: [
 		{
-			title: '“Leetcode for AI Coding”',
-			tagline: 'Testing Engineer AI-Readiness in the Modern Era',
+			title: 'VibeRank ("Leetcode for AI")',
+			tagline: 'Agentic Supervision Benchmarks & Engineer AI-Readiness',
 			category: 'AI Evaluation',
 			status: 'Coming Soon',
-			description: 'Engineering is dead. Test the AI-readiness of engineers and assess their value in modern AI-led development environments.',
+			image: '/images/products/viberank.png',
+			description: 'Evaluating how engineers steer, audit, and orchestrate agentic workflows rather than syntax memorization.',
 			highlights: [
 				'Evaluates orchestration, prompt debugging, and code critique over syntax memorization',
-				'Simulates edge cases and model failure modes in production workflows',
-				'High-conviction engineering hiring rubric'
+				'Simulates edge cases, SSRF leaks, and model failure modes in production workflows',
+				'Comprehensive candidate business risk scorecard and remediation syllabus'
 			]
 		},
 		{
 			title: 'Terminus: Ontological Foundations for Financial AI',
-			tagline: 'Eliminating Hallucination in Buy-Side AI',
+			tagline: 'Equity Knowledge Graph & Telemetry Backtest Engine',
 			category: 'Financial AI',
 			status: 'Private Repository',
-			description: 'Ontologies are the future of Financial AI. This project starts with Equities, organising market, master & alt data for one industry.',
+			image: '/images/products/terminus.png',
+			description: 'Ontologies are the future of Financial AI. Unifies market, master, and alternative telemetry data for high-conviction quantitative reasoning.',
 			highlights: [
 				'Unifies tickers, parent companies, subsidiaries, and supply chains',
 				'Deterministic knowledge graph feeding LLM reasoning engines',
-				'Buy-side quantitative architecture for high-conviction research'
+				'Sub-second DuckDB OLAP analytics with zero model hallucinations'
 			]
 		},
 		{
-			title: 'Archive AI',
-			tagline: 'Heritage Archival Processing AI for HM Government of Gibraltar',
+			title: 'Archive AI (Time-Portals)',
+			tagline: 'Heritage Archival Processing & Spatial Reconstruction for HM Government',
 			category: 'Computer Vision & Agents',
 			status: 'Live',
 			url: 'https://time-portals.vercel.app',
 			githubUrl: 'https://github.com/CMorenoStokoe/time-portals',
-			description: 'Developed a multi-modal agent flow which brings historical archives to life, labelling & generating reconstructions of landmarks.',
+			image: '/images/products/time-portals-screen.png',
+			description: 'Multi-modal agent flow bringing historical paper archives to life, extracting landmarks and generating 3D spatial reconstructions.',
 			highlights: [
 				'Multi-modal agent flow for historical paper record extraction and indexing',
-				'Automated landmark labeling and interactive 3D spatial reconstructions',
-				'Accessible via modern high-performance web interface'
+				'Automated landmark labeling and interactive spatial reconstructions across centuries',
+				'Accessible via high-performance web mapping interface'
 			]
 		},
 		{
@@ -381,30 +385,57 @@ export const PROFILE_DATA = {
 			status: 'Live',
 			url: 'https://astro-json-chi.vercel.app/',
 			githubUrl: 'https://github.com/CMorenoStokoe/astroJSON',
-			description: 'Exploring network graph-based structures for extremely large datasets. Developed a Neo4J schema for storing, retrieving, and visualising extremely large and sparse spatial data (Maps of Space).',
+			image: '/images/products/astro-json-screen.png',
+			description: 'Exploring network graph-based structures for extremely large datasets. Developed a Neo4J schema for storing, retrieving, and visualising 4-D celestial data.',
 			highlights: [
-				'Replaces flat, bloated GeoJSON with high-performance graph traversals',
-				'Interactive WebGL and Three.js 3D visualization of discovered exoplanets',
+				'Replaces flat GeoJSON with high-performance graph traversals for dynamic coordinates',
+				'Interactive Three.js 3D visualization of solar systems and discovered exoplanets',
 				'Open specification for astronomical and celestial GIS mapping'
 			]
 		},
 		{
-			title: 'AI-Driven Generators',
-			tagline: 'Websites, Social Media Profiles & Runtime Logic Engines',
+			title: 'Live Another Life',
+			tagline: 'Multi-Modal Synthetic Persona & Social Footprint Engine',
+			category: 'Generative Agents',
+			status: 'Live',
+			url: 'https://live-another-life.vercel.app',
+			githubUrl: 'https://github.com/CMorenoStokoe/Dauntless-AI',
+			image: '/images/products/live-another-life.png',
+			description: 'Autonomous multi-modal agent flow synthesizing coherent alter-egos, artificial lifespans, and dynamic social media footprints from zero prompt seeds.',
+			highlights: [
+				'Generates full-spectrum digital identities, backgrounds, and narrative chronologies',
+				'Autonomous content scheduling and persona-consistent interaction graphs',
+				'Multi-modal asset generation simulating realistic human digital breadcrumbs'
+			]
+		},
+		{
+			title: 'Meteor Shower (Webswarm)',
+			tagline: 'Autonomous Swarm Architecture for Instant Website Generation',
 			category: 'Generative Systems',
+			status: 'Live',
+			url: 'https://meteor-shower.vercel.app',
+			githubUrl: 'https://github.com/CMorenoStokoe/Dauntless-AI',
+			image: '/images/products/meteor-shower.png',
+			description: 'AI rocket swarm architecture that translates high-level prompts into fully responsive, production-ready web interfaces in real-time.',
+			highlights: [
+				'Coordinated swarm of specialized agent rockets handling layout, copy, and styling',
+				'Generates responsive HTML/CSS/JS components with zero human code intervention',
+				'Instant deployment pipeline previewing generated web assets in seconds'
+			]
+		},
+		{
+			title: 'Zyzyx Quadrant',
+			tagline: 'Runtime UI & Procedural Game Logic Engine',
+			category: 'Runtime AI Systems',
 			status: 'Live',
 			url: 'https://zyzyx-quadrant.vercel.app',
 			githubUrl: 'https://github.com/CMorenoStokoe/Dauntless-AI',
-			links: [
-				{ name: 'Meteor Shower (AI Website Builder)', url: 'https://meteor-shower.vercel.app' },
-				{ name: 'Live Another Life (Synthetic Footprint)', url: 'https://live-another-life.vercel.app' },
-				{ name: 'Zyzyx Quadrant (Runtime Logic Engine)', url: 'https://zyzyx-quadrant.vercel.app' }
-			],
-			description: 'Developed a series of multi-modal PoCs exploring the capabilities for GenAI to entirely generate content and drive logic flows.',
+			image: '/images/products/zyzyx-screen.png',
+			description: 'Procedural runtime state machine exploring real-time GenAI decision trees, dynamic interface styling, and game logic orchestration.',
 			highlights: [
-				'Meteor Shower: Dynamic AI website builder',
-				'Live Another Life: Synthetic persona and footprint generator',
-				'Zyzyx Quadrant: Runtime UI and game logic engine'
+				'Procedural generation of complex game spaces and multi-path narrative trees',
+				'Real-time state verification preventing logic loop traps and hallucinated game rules',
+				'High-performance client-side rendering with reactive UI controls'
 			]
 		}
 	] as PortfolioProject[],

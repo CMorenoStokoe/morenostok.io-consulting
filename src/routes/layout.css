@@ -7,15 +7,15 @@
 	--font-serif: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 	--font-mono: 'IBM Plex Mono', monospace;
 
-	--color-white: #DDEBFB;
-	--color-black: #000914;
+	--color-white: #C6D7EA;
+	--color-black: #012148;
 
-	--color-surface-canvas: #DDEBFB;
-	--color-surface-card: #DDEBFB;
-	--color-border-technical: #000914;
-	--color-border-technical-light: #000914;
-	--color-text-primary: #000914;
-	--color-text-muted: #000914;
+	--color-surface-canvas: #C6D7EA;
+	--color-surface-card: #C6D7EA;
+	--color-border-technical: #012148;
+	--color-border-technical-light: #012148;
+	--color-text-primary: #012148;
+	--color-text-muted: #012148;
 	--color-accent-focus: #3300FF;
 	--color-accent-linkedin: #3300FF;
 }
@@ -38,8 +38,8 @@
 	}
 
 	::selection {
-		background-color: #000914;
-		color: #DDEBFB;
+		background-color: #012148;
+		color: #C6D7EA;
 	}
 
 	html, body {
@@ -51,8 +51,8 @@
 
 	body {
 		font-family: var(--font-sans);
-		color: #000914;
-		background-color: #DDEBFB;
+		color: #012148;
+		background-color: #C6D7EA;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		padding-left: env(safe-area-inset-left);

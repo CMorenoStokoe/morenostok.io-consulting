@@ -13,7 +13,7 @@ class TerminalState {
 		{
 			id: 'init-1',
 			role: 'system',
-			content: 'System ready. Query portfolio telemetry, case studies, or operational parameters. Quick navigation links:\n- <a href="#offerings" class="text-white border-b border-[#DDEBFB] hover:border-white">[01] Core Consulting Pillars</a>\n- <a href="#case-studies" class="text-white border-b border-[#DDEBFB] hover:border-white">[02] Verified Buy-Side Case Studies</a>\n- <a href="#connect" class="text-white border-b border-[#DDEBFB] hover:border-white">[03] Outside-IR35 Engagement Scope</a>',
+			content: 'System ready. Query portfolio telemetry, case studies, or operational parameters. Quick navigation links:\n- <a href="#case-studies" class="text-white border-b border-[#C6D7EA] hover:border-white">[01] Verified Buy-Side Case Studies</a>\n- <a href="#connect" class="text-white border-b border-[#C6D7EA] hover:border-white">[02] Outside-IR35 Engagement Scope</a>',
 			timestamp: new Date().toLocaleTimeString()
 		}
 	]);

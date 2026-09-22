@@ -14,7 +14,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	) {
 		responseText = `[LANGGRAPH // NODE: BUY_SIDE_SYNTHESIS]
 Identified verified case study: <a href="#case-studies" class="text-white border-b border-[#3300FF] hover:text-[#3300FF]">Verition Fund Management</a>.
-Dr. Chris Moreno-Stokoe served as Sole Founding AI Engineer (2023 - Present).
+Dr. Chris Moreno-Stokoe served as Sole Founding AI Engineer (2023 - 2026).
 • Replaced legacy enterprise BI tooling ($1M+/yr displaced software costs) via in-memory DuckDB OLAP engine.
 • Reduced portfolio query latency from 30+ seconds down to <250ms for front-office trading desks.
 • Built firm-wide Sovereign AI Chat & Model Garden serving 60,000+ messages with 99.5% uptime.`;
@@ -26,7 +26,7 @@ Dr. Chris Moreno-Stokoe served as Sole Founding AI Engineer (2023 - Present).
 	) {
 		responseText = `[LANGGRAPH // NODE: ENTERPRISE_PRACTICE_RETRIEVAL]
 Identified verified case study: <a href="#case-studies" class="text-white border-b border-[#3300FF] hover:text-[#3300FF]">PwC Operate AI Engineering</a>.
-Dr. Chris Moreno-Stokoe founded the AI Engineering team at PwC UK (2022 - 2023).
+Dr. Chris Moreno-Stokoe founded the AI Engineering team at PwC UK (2022).
 • Engineered the PwC Resource Searcher ("PwC LinkedIn"), indexing 4,000+ practitioners.
 • Slashed engagement staffing turnaround by 75% (8 hours down to 2 hours per role).
 • Scaled firm-wide AI community from scratch to 200+ practitioners across London and Belfast.`;
@@ -40,7 +40,7 @@ Dr. Chris Moreno-Stokoe founded the AI Engineering team at PwC UK (2022 - 2023).
 		query.includes('contract')
 	) {
 		responseText = `[LANGGRAPH // NODE: COMMERCIAL_OPERATING_MODEL]
-Commercial Operating Standard: Strictly <a href="#connect" class="text-white border-b border-[#3300FF] hover:text-[#3300FF]">Outside IR35</a> via outcome-driven Statements of Work (SOWs).
+Commercial Operating Standard: <a href="#connect" class="text-white border-b border-[#3300FF] hover:text-[#3300FF]">Outside IR35 compliant</a> via outcome-driven Statements of Work (SOWs).
 • Pillar 01: GenAI Strategy & Advisory (Nominal £1,000/day fractional retainers).
 • Pillar 02: Production Architecture (Nominal £1,000/day milestone SOWs).
 • Pillar 03: Rapid PoCs & Build-Out (£500/day blended rate for 2 to 4 week validation pods).
@@ -63,7 +63,7 @@ Doctoral Pedigree & Lab Inventions:
 		responseText = `[LANGGRAPH // NODE: AGENT_ORCHESTRATOR]
 Processed query: "${body.query || 'status'}".
 Executive Profile Summary:
-Dr. Chris Moreno-Stokoe is a Principal Technical Consultant & Systems Architect operating strictly <a href="#connect" class="text-white border-b border-[#3300FF] hover:text-[#3300FF]">Outside IR35</a>.
+Dr. Chris Moreno-Stokoe is a Principal Technical Consultant & Systems Architect operating <a href="#connect" class="text-white border-b border-[#3300FF] hover:text-[#3300FF]">Outside IR35 compliant</a>.
 He established zero-to-one AI engineering capabilities at Verition Fund Management and PwC UK, and holds a PhD in Human-Computer Interaction from the University of Bristol.
 Recommended static navigation:
 - <a href="#offerings" class="text-white border-b border-[#3300FF] hover:text-[#3300FF]">Three Consulting Pillars & Rate Cards</a>

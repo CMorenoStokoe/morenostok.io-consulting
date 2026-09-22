@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" fill="none">
+  <rect width="800" height="450" fill="#012148"/>
+  <defs>
+    <pattern id="grid3" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#C6D7EA" stroke-width="0.75" stroke-opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#grid3)"/>
+
+  <!-- Window Header -->
+  <rect x="40" y="35" width="720" height="40" fill="#012148" stroke="#C6D7EA" stroke-width="1.5"/>
+  <circle cx="65" cy="55" r="4" fill="#3300FF"/>
+  <circle cx="80" cy="55" r="4" fill="#C6D7EA" fill-opacity="0.6"/>
+  <circle cx="95" cy="55" r="4" fill="#C6D7EA" fill-opacity="0.3"/>
+  <text x="120" y="59" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="600" letter-spacing="1">ARCHIVE AI // HM GOVERNMENT GIBRALTAR SPATIAL HARNESS</text>
+  <rect x="630" y="44" width="115" height="22" fill="#3300FF"/>
+  <text x="648" y="59" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="700">LIVE AGENT</text>
+
+  <!-- Split View: OCR Document on Left, 3D Mesh on Right -->
+  <rect x="40" y="75" width="340" height="335" fill="#012148" stroke="#C6D7EA" stroke-width="1.5"/>
+  <text x="60" y="105" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="700">HISTORICAL RECORD PARSER</text>
+  
+  <!-- Simulated parchment / blueprint document with OCR bounding boxes -->
+  <rect x="65" y="125" width="290" height="235" fill="#012148" stroke="#C6D7EA" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="85" y="145" width="120" height="18" fill="#3300FF" fill-opacity="0.25" stroke="#3300FF" stroke-width="1.2"/>
+  <text x="92" y="158" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="9">[ENTITY: BASTION_1782]</text>
+
+  <rect x="85" y="175" width="250" height="8" fill="#C6D7EA" fill-opacity="0.4"/>
+  <rect x="85" y="193" width="220" height="8" fill="#C6D7EA" fill-opacity="0.4"/>
+  <rect x="85" y="211" width="240" height="8" fill="#C6D7EA" fill-opacity="0.4"/>
+  <rect x="85" y="235" width="140" height="18" fill="#3300FF" fill-opacity="0.25" stroke="#3300FF" stroke-width="1.2"/>
+  <text x="92" y="248" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="9">[COORDINATES: LAT 36.14]</text>
+
+  <rect x="85" y="265" width="230" height="8" fill="#C6D7EA" fill-opacity="0.4"/>
+  <rect x="85" y="283" width="200" height="8" fill="#C6D7EA" fill-opacity="0.4"/>
+  <rect x="85" y="315" width="250" height="25" fill="#012148" stroke="#C6D7EA" stroke-width="1"/>
+  <text x="95" y="331" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="9">AGENT OCR CONFIDENCE: 99.4%</text>
+
+  <!-- Right: 3D Spatial Mesh Wireframe -->
+  <rect x="400" y="75" width="360" height="335" fill="#012148" stroke="#C6D7EA" stroke-width="1.5"/>
+  <text x="420" y="105" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="700">3D SPATIAL RECONSTRUCTION</text>
+
+  <!-- 3D Geometric Polygonal Landmark Mesh -->
+  <polygon points="580,140 680,210 580,280 480,210" fill="#3300FF" fill-opacity="0.2" stroke="#3300FF" stroke-width="1.5"/>
+  <polygon points="580,140 580,280 480,210" fill="none" stroke="#C6D7EA" stroke-width="1.2"/>
+  <polygon points="580,140 680,210 580,280" fill="none" stroke="#C6D7EA" stroke-width="1.2"/>
+  <polygon points="580,280 680,210 680,310 580,380" fill="#012148" stroke="#C6D7EA" stroke-width="1.5"/>
+  <polygon points="580,280 480,210 480,310 580,380" fill="#012148" stroke="#C6D7EA" stroke-width="1.5"/>
+  <line x1="580" y1="280" x2="580" y2="380" stroke="#3300FF" stroke-width="2"/>
+
+  <!-- Landmark Vertices -->
+  <circle cx="580" cy="140" r="4" fill="#C6D7EA"/>
+  <circle cx="680" cy="210" r="4" fill="#C6D7EA"/>
+  <circle cx="480" cy="210" r="4" fill="#C6D7EA"/>
+  <circle cx="580" cy="280" r="4" fill="#3300FF"/>
+  <circle cx="580" cy="380" r="4" fill="#C6D7EA"/>
+  <circle cx="480" cy="310" r="4" fill="#C6D7EA"/>
+  <circle cx="680" cy="310" r="4" fill="#C6D7EA"/>
+
+  <text x="420" y="395" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="600">TIME PORTAL MULTI-MODAL PIPELINE // THREE.JS ENGINE</text>
+</svg>

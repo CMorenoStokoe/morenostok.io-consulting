@@ -39,7 +39,7 @@
 		</div>
 
 		<div class="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-black">
-			<div>© {new Date().getFullYear()} Dr. Chris Moreno-Stokoe. Operating strictly Outside IR35.</div>
+			<div>© {new Date().getFullYear()} Dr. Chris Moreno-Stokoe. All rights reserved.</div>
 			<div class="flex items-center gap-3 sm:gap-4 font-medium text-black">
 				<a href="/sitemap.xml" class="hover:underline py-1">Sitemap</a>
 				<span>•</span>

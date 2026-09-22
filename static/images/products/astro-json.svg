@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" fill="none">
+  <rect width="800" height="450" fill="#012148"/>
+  <defs>
+    <pattern id="grid4" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#C6D7EA" stroke-width="0.75" stroke-opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#grid4)"/>
+
+  <!-- Window Header -->
+  <rect x="40" y="35" width="720" height="40" fill="#012148" stroke="#C6D7EA" stroke-width="1.5"/>
+  <circle cx="65" cy="55" r="4" fill="#3300FF"/>
+  <circle cx="80" cy="55" r="4" fill="#C6D7EA" fill-opacity="0.6"/>
+  <circle cx="95" cy="55" r="4" fill="#C6D7EA" fill-opacity="0.3"/>
+  <text x="120" y="59" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="600" letter-spacing="1">ASTROJSON // 4-D CELESTIAL GRAPH INTERCHANGE STANDARD</text>
+  <rect x="630" y="44" width="115" height="22" fill="#3300FF"/>
+  <text x="646" y="59" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="700">NEO4J + 3D</text>
+
+  <!-- Celestial Space Graph Canvas -->
+  <rect x="40" y="75" width="720" height="335" fill="#012148" stroke="#C6D7EA" stroke-width="1.5"/>
+
+  <!-- Orbital Ellipses -->
+  <ellipse cx="280" cy="240" rx="140" ry="70" fill="none" stroke="#C6D7EA" stroke-width="1" stroke-dasharray="3 3" stroke-opacity="0.4" transform="rotate(-15 280 240)"/>
+  <ellipse cx="280" cy="240" rx="220" ry="110" fill="none" stroke="#3300FF" stroke-width="1.5" stroke-opacity="0.6" transform="rotate(-15 280 240)"/>
+  <ellipse cx="280" cy="240" rx="300" ry="145" fill="none" stroke="#C6D7EA" stroke-width="1" stroke-opacity="0.3" transform="rotate(-15 280 240)"/>
+
+  <!-- Primary Stellar Node -->
+  <circle cx="280" cy="240" r="16" fill="#3300FF"/>
+  <circle cx="280" cy="240" r="24" fill="none" stroke="#3300FF" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="280" y="278" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="700" text-anchor="middle">SOLAR_SYSTEM_CORE</text>
+
+  <!-- Planet Nodes & Vectors -->
+  <circle cx="390" cy="195" r="7" fill="#C6D7EA"/>
+  <line x1="390" y1="195" x2="430" y2="180" stroke="#3300FF" stroke-width="2"/>
+  <text x="405" y="172" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="9">EARTH_VECTOR(t)</text>
+
+  <circle cx="160" cy="265" r="9" fill="#C6D7EA"/>
+  <line x1="160" y1="265" x2="130" y2="290" stroke="#3300FF" stroke-width="2"/>
+  <text x="75" y="310" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="9">MARS_TRAJECTORY</text>
+
+  <circle cx="490" cy="295" r="6" fill="#3300FF"/>
+  <text x="510" y="300" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="9">JUPITER_BARYCENTER</text>
+
+  <!-- Side Telemetry Box -->
+  <rect x="520" y="100" width="220" height="150" fill="#012148" stroke="#C6D7EA" stroke-width="1"/>
+  <text x="535" y="125" fill="#3300FF" font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="700">&gt; NEO4J SPATIAL TRAVERSAL</text>
+  <text x="535" y="148" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="9" fill-opacity="0.8">DIMENSIONS: (X, Y, Z, t)</text>
+  <text x="535" y="170" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="9" fill-opacity="0.8">GRAPH LATENCY: 2.1ms</text>
+  <text x="535" y="192" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="9" fill-opacity="0.8">GEOJSON PARADOX RESOLVED</text>
+  <text x="535" y="214" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="9" fill-opacity="0.8">RELATIVISTIC OFFSET: 0.000s</text>
+  <rect x="535" y="225" width="190" height="15" fill="#3300FF" fill-opacity="0.3"/>
+
+  <!-- Bottom Telemetry Bar -->
+  <line x1="40" y1="370" x2="760" y2="370" stroke="#C6D7EA" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="60" y="393" fill="#C6D7EA" font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="600">SPECIFICATION: DYNAMIC CELESTIAL EPHEMERIS GRAPH ENGINE</text>
+  <text x="660" y="393" fill="#3300FF" font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="700">OPEN SPEC</text>
+</svg>

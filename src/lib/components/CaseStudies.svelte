@@ -2,20 +2,17 @@
 	import { DAUNTLESS_HERITAGE } from '$lib/data/profile';
 </script>
 
-<section id="case-studies" class="py-12 sm:py-16 md:py-20 bg-white text-black">
-	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<section id="case-studies" class="py-8 sm:py-12 bg-white text-black">
+	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
 		<!-- Section Header -->
-		<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-2 mb-10">
-			<div class="max-w-3xl space-y-2">
+		<div class="flex flex-col md:flex-row md:items-end justify-between gap-3 pb-2 border-b border-black">
+			<div class="max-w-3xl space-y-1">
 				<div class="font-mono text-xs uppercase tracking-widest text-black font-semibold">
 					// Track Record & Systems Architecture
 				</div>
-				<h2 class="text-2xl sm:text-3xl lg:text-4xl font-sans font-bold text-black tracking-tight">
+				<h2 class="text-xl sm:text-2xl lg:text-3xl font-sans font-bold text-black tracking-tight">
 					Verified Case Studies
 				</h2>
-				<p class="text-sm sm:text-base text-black leading-relaxed">
-					Selected high-stakes technical engagements delivering audited capital efficiency, workflow acceleration, and institutional transformation.
-				</p>
 			</div>
 
 			<div class="shrink-0 font-mono text-xs text-black font-semibold">
@@ -23,204 +20,129 @@
 			</div>
 		</div>
 
-		<!-- 1. Executive Foundation (2/3 + 1/3 Grid) -->
-		<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10 mb-16">
+		<!-- 1. Executive Anchor Studies (Verition + PwC) -->
+		<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 			<!-- Card 1: Verition Fund Management (2/3 Width) -->
-			<div class="lg:col-span-2 bg-white flex flex-col justify-between space-y-6">
+			<div class="lg:col-span-2 bg-white border border-black p-5 sm:p-6 flex flex-col justify-between space-y-4">
 				<div>
-					<div class="font-mono text-xs text-black tracking-widest uppercase mb-2 font-semibold">
-						VERITION FUND MANAGEMENT // 2023 - PRESENT
+					<div class="font-mono text-[11px] text-black tracking-wider uppercase mb-1.5 font-bold">
+						VERITION FUND MANAGEMENT // 2023 - 2026
 					</div>
 
-					<h3 class="font-sans text-2xl sm:text-3xl font-bold text-black mb-4 leading-tight">
-						Scaling a Sovereign AI Division & Delivering £1M+ in Savings
+					<h3 class="font-sans text-xl sm:text-2xl font-bold text-black mb-3 leading-tight">
+						Scaling a Sovereign AI Division &amp; Delivering £1M+ in Annual Savings
 					</h3>
 
-					<!-- The Mandate -->
-					<div class="mb-5">
-						<div class="font-mono text-xs text-black uppercase tracking-wider mb-1.5 font-bold">
-							// THE MANDATE
-						</div>
-						<p class="font-sans text-sm text-black leading-relaxed">
-							Build a dedicated, secure AI capability for a multi-strategy fund to modernize front-office trading and risk operations.
-						</p>
-					</div>
-
-					<!-- The Outcome -->
-					<div class="mb-5">
-						<div class="font-mono text-xs text-black uppercase tracking-wider mb-1.5 font-bold">
-							// THE OUTCOME
-						</div>
-						<p class="font-sans text-sm text-black font-medium leading-relaxed">
-							Scaled firmwide usage across executive desks, replacing legacy software stacks to deliver over £1M in annual savings. Created ultra-low-latency analytics engines that reduced critical portfolio intelligence routines to sub-second execution.
-						</p>
-					</div>
+					<p class="font-sans text-xs sm:text-sm text-black leading-relaxed">
+						Engineered a sovereign enterprise AI platform and ultra-low-latency DuckDB analytics engine across Risk, PnL, and front-office trading. Displaced bloated legacy BI software stacks, delivering over £1M in annual licensing efficiency while compressing queries from 30+ seconds down to sub-second execution.
+					</p>
 				</div>
 
-				<!-- Stack Pills in clean monospace format -->
-				<div class="flex flex-wrap gap-2 text-[11px] font-mono uppercase text-black font-semibold">
-					{#each ['DuckDB', 'Model Context Protocol (MCP)', 'FastAPI', 'LibreChat', 'AWS DocumentDB', 'Python'] as badge}
-						<span class="text-black">
-							[{badge}]
-						</span>
-					{/each}
+				<div class="pt-2 border-t border-black/15 flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[11px]">
+					<span class="text-black font-bold">£1M+ SAVED/YR</span>
+					<span class="text-black/30">/</span>
+					<span class="text-black font-bold">&lt; 250MS QUERIES</span>
+					<span class="text-black/30">/</span>
+					<span class="text-black font-bold">ZERO CLOUD DATA LEAKAGE</span>
 				</div>
 			</div>
 
 			<!-- Card 2: PwC UK (1/3 Width) -->
-			<div class="lg:col-span-1 bg-white flex flex-col justify-between space-y-6">
+			<div class="lg:col-span-1 bg-white border border-black p-5 sm:p-6 flex flex-col justify-between space-y-4">
 				<div>
-					<div class="font-mono text-xs text-black tracking-widest uppercase mb-2 font-semibold">
-						PWC UK // 2022 - 2023
+					<div class="font-mono text-[11px] text-black tracking-wider uppercase mb-1.5 font-bold">
+						PWC UK // 2022
 					</div>
 
-					<h3 class="font-sans text-2xl sm:text-3xl font-bold text-black mb-4 leading-tight">
-						Accelerating Enterprise Talent Allocation by 75%
+					<h3 class="font-sans text-xl sm:text-2xl font-bold text-black mb-3 leading-tight">
+						Accelerating Enterprise Staffing by 75%
 					</h3>
 
-					<!-- The Mandate -->
-					<div class="mb-5">
-						<div class="font-mono text-xs text-black uppercase tracking-wider mb-1.5 font-bold">
-							// THE MANDATE
-						</div>
-						<p class="font-sans text-sm text-black leading-relaxed">
-							Transform manual consultancy staffing workflows into high-velocity, software-driven operations for a 4,000-person division.
-						</p>
-					</div>
-
-					<!-- The Outcome -->
-					<div class="mb-5">
-						<div class="font-mono text-xs text-black uppercase tracking-wider mb-1.5 font-bold">
-							// THE OUTCOME
-						</div>
-						<p class="font-sans text-sm text-black font-medium leading-relaxed">
-							Built an algorithmic search engine that reduced role allocation times from 8 hours to 2 hours. Drove ~$1M in billed efficiency gains and established an internal AI community of over 200 practitioners.
-						</p>
-					</div>
+					<p class="font-sans text-xs sm:text-sm text-black leading-relaxed">
+						Founded a high-velocity AI squad delivering algorithmic resource matching for a 4,000-person division. Slashed role allocation times from 8 hours to 2 hours, generating ~$1M in billed efficiency gains and seeding an enterprise AI community of 200+ practitioners.
+					</p>
 				</div>
 
-				<!-- Stack Pills in clean monospace format -->
-				<div class="flex flex-wrap gap-2 text-[11px] font-mono uppercase text-black font-semibold">
-					{#each ['React', 'GCP', 'BigQuery', 'App Engine', 'Talent Intelligence Algorithms'] as badge}
-						<span class="text-black">
-							[{badge}]
-						</span>
-					{/each}
+				<div class="pt-2 border-t border-black/15 flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[11px]">
+					<span class="text-black font-bold">75% TIME REDUCTION</span>
+					<span class="text-black/30">/</span>
+					<span class="text-black font-bold">~$1M BILLED IMPACT</span>
 				</div>
 			</div>
 		</div>
 
-		<!-- 2. Middle Section: Modular Product Systems Grid -->
-		<div class="font-mono text-xs text-black tracking-widest uppercase mb-6 font-semibold">
-			// DEPLOYED SYSTEMS & CORE INFRASTRUCTURE
-		</div>
-
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 mb-16">
-			<!-- Compact Card 1: Verition VISOR -->
-			<div class="bg-white flex flex-col justify-between space-y-4">
-				<div>
-					<div class="font-mono text-[11px] text-black uppercase mb-1 font-semibold">
-						VERITION FUND MANAGEMENT // 2023 - PRESENT
-					</div>
-					<h4 class="font-sans text-base font-bold text-black mb-3 leading-snug">
-						VISOR: Front-Office Data Intelligence & Sub-Second Analytics
-					</h4>
-					<p class="font-sans text-xs text-black leading-relaxed mb-4">
-						Full-stack Tableau replacement application deployed across Risk, PnL, Treasury, and portfolio desks. Ingests live Bloomberg market chat and SEC EDGAR filings, executing complex relational analytical queries in sub-250ms via high-performance DuckDB pipelines.
-					</p>
-				</div>
-				<div class="flex flex-wrap gap-2 text-[10px] font-mono uppercase text-black font-semibold">
-					{#each ['DuckDB', 'D3.js', 'SvelteKit', 'Electron', 'Python', 'AWS'] as badge}
-						<span class="text-black">
-							[{badge}]
-						</span>
-					{/each}
-				</div>
+		<!-- 2. Deployed Systems & Core Infrastructure (3-Column Dense Grid) -->
+		<div class="space-y-3">
+			<div class="font-mono text-[11px] text-black tracking-widest uppercase font-bold">
+				// DEPLOYED SYSTEMS &amp; CORE INFRASTRUCTURE
 			</div>
 
-			<!-- Compact Card 2: Verition Sovereign AI Platform -->
-			<div class="bg-white flex flex-col justify-between space-y-4">
-				<div>
-					<div class="font-mono text-[11px] text-black uppercase mb-1 font-semibold">
-						VERITION FUND MANAGEMENT // 2023 - PRESENT
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+				<!-- System 1: Verition VISOR -->
+				<div class="bg-white border border-black p-4 space-y-2">
+					<div class="font-mono text-[10px] text-black uppercase font-bold">
+						VERITION // FRONT-OFFICE VISOR
 					</div>
-					<h4 class="font-sans text-base font-bold text-black mb-3 leading-snug">
-						Enterprise AI Platform, Connected MCPs & Model Garden
+					<h4 class="font-sans text-sm font-bold text-black leading-snug">
+						Sub-Second Analytics &amp; SEC EDGAR AI
 					</h4>
-					<p class="font-sans text-xs text-black leading-relaxed mb-4">
-						Centralized sovereign AI gateway offering multi-model access with complete cloud data privacy. Connects Model Context Protocol (MCP) tool servers and permissioned proxy bridges for quantitative research and automated operational analysis.
+					<p class="font-sans text-xs text-black/85 leading-relaxed">
+						Full-stack Tableau replacement ingesting Bloomberg chat and SEC EDGAR filings for sub-250ms query processing over 1M+ daily market transactions.
 					</p>
 				</div>
-				<div class="flex flex-wrap gap-2 text-[10px] font-mono uppercase text-black font-semibold">
-					{#each ['LibreChat', 'React', 'FastAPI', 'MCP', 'DocumentDB', 'AWS'] as badge}
-						<span class="text-black">
-							[{badge}]
-						</span>
-					{/each}
-				</div>
-			</div>
 
-			<!-- Compact Card 3: PwC Enterprise Resource Searcher -->
-			<div class="bg-white flex flex-col justify-between space-y-4">
-				<div>
-					<div class="font-mono text-[11px] text-black uppercase mb-1 font-semibold">
-						PWC UK // 2022 - 2023
+				<!-- System 2: Verition Platform -->
+				<div class="bg-white border border-black p-4 space-y-2">
+					<div class="font-mono text-[10px] text-black uppercase font-bold">
+						VERITION // ENTERPRISE AI GATEWAY
 					</div>
-					<h4 class="font-sans text-base font-bold text-black mb-3 leading-snug">
-						PwC "LinkedIn": Enterprise Resource Searcher
+					<h4 class="font-sans text-sm font-bold text-black leading-snug">
+						Connected MCPs &amp; Model Garden
 					</h4>
-					<p class="font-sans text-xs text-black leading-relaxed mb-4">
-						Algorithmic talent-matching engine serving a 4,000-person operating unit. Replaced manual spreadsheet analysis with high-velocity search pipelines, slashing deployment turnaround times from 8 hours to 2 hours per role.
+					<p class="font-sans text-xs text-black/85 leading-relaxed">
+						Sovereign LLM infrastructure serving 60k+ queries with 99.5% uptime, permissioned proxy bridges, and zero enterprise data leakage.
 					</p>
 				</div>
-				<div class="flex flex-wrap gap-2 text-[10px] font-mono uppercase text-black font-semibold">
-					{#each ['React', 'GCP', 'BigQuery', 'JavaScript', 'Apps Script'] as badge}
-						<span class="text-black">
-							[{badge}]
-						</span>
-					{/each}
+
+				<!-- System 3: PwC Searcher -->
+				<div class="bg-white border border-black p-4 space-y-2">
+					<div class="font-mono text-[10px] text-black uppercase font-bold">
+						PWC UK // TALENT ENGINE
+					</div>
+					<h4 class="font-sans text-sm font-bold text-black leading-snug">
+						Algorithmic Resource Allocator
+					</h4>
+					<p class="font-sans text-xs text-black/85 leading-relaxed">
+						Replaced manual spreadsheet operations with high-speed talent search pipelines across 4,000 consultants, reducing matching time from 8h to 2h.
+					</p>
 				</div>
 			</div>
 		</div>
 
-		<!-- 3. Foundational Contracting Heritage (Preserved Dauntless R&D) -->
-		<div class="pt-8 space-y-6">
-			<div>
+		<!-- 3. Foundational Contracting Heritage (Dauntless R&D) -->
+		<div class="pt-2 space-y-3">
+			<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-t border-black pt-4">
 				<div class="font-mono text-xs font-bold uppercase tracking-widest text-black">
-					// FORMERLY TRADED UNDER DAUNTLESS R&D
+					// CONTRACTING HERITAGE (DAUNTLESS R&amp;D)
 				</div>
-				<p class="text-xs text-black font-mono mt-1">
-					Contract software engineering delivered across digital health, epidemiological research, and data visualization.
-				</p>
+				<span class="text-[11px] text-black/70 font-mono">
+					Healthcare, epidemiological simulation &amp; data intelligence
+				</span>
 			</div>
 
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 				{#each DAUNTLESS_HERITAGE.contracts as contract}
-					<div class="bg-white flex flex-col justify-between space-y-4">
-						<div class="space-y-2">
-							<div class="flex items-center justify-between gap-2 text-xs font-semibold">
-								<span class="text-black font-mono font-bold text-[11px] uppercase tracking-wider">
-									{contract.client}
-								</span>
-								<span class="font-mono text-[11px] text-black">{contract.period}</span>
-							</div>
-
-							<h4 class="text-sm font-sans font-bold text-black leading-snug">
-								{contract.title}
-							</h4>
-
-							<p class="text-xs text-black leading-relaxed">
-								{contract.description}
-							</p>
+					<div class="bg-white border border-black/40 p-3.5 space-y-1.5 text-xs">
+						<div class="flex items-center justify-between gap-2 font-mono text-[10px] font-bold">
+							<span class="text-black uppercase tracking-wider">{contract.client}</span>
+							<span class="text-black/60 font-normal">{contract.period}</span>
 						</div>
-
-						<div class="flex flex-wrap items-center gap-2 text-[10px] font-mono uppercase text-black font-semibold">
-							{#each contract.stack as item}
-								<span class="text-black">
-									[{item}]
-								</span>
-							{/each}
-						</div>
+						<h4 class="font-sans font-bold text-black text-xs leading-snug">
+							{contract.title}
+						</h4>
+						<p class="font-sans text-[11px] text-black/80 leading-relaxed">
+							{contract.description}
+						</p>
 					</div>
 				{/each}
 			</div>

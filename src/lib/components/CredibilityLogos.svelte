@@ -74,7 +74,7 @@
 						<img
 							src={org.logoSrc}
 							alt={org.name}
-							class="h-7 sm:h-8 max-h-8 max-w-full w-auto object-contain saturation-0 saturate-0 opacity-80 hover:opacity-100 hover:saturation-100 hover:saturate-100 transition-all duration-300"
+							class="client-logo h-7 sm:h-8 max-h-8 max-w-full w-auto object-contain opacity-90 hover:opacity-100 transition-all duration-300"
 							loading="lazy"
 						/>
 					</div>
@@ -88,7 +88,7 @@
 						<img
 							src={org.logoSrc}
 							alt={org.name}
-							class="h-7 sm:h-8 max-h-8 max-w-full w-auto object-contain saturation-0 saturate-0 opacity-80 hover:opacity-100 hover:saturation-100 hover:saturate-100 transition-all duration-300"
+							class="client-logo h-7 sm:h-8 max-h-8 max-w-full w-auto object-contain opacity-90 hover:opacity-100 transition-all duration-300"
 							loading="lazy"
 						/>
 					</div>
@@ -106,6 +106,10 @@
 		100% {
 			transform: translateX(-100%);
 		}
+	}
+
+	.client-logo {
+		filter: none;
 	}
 
 	.marquee-content {

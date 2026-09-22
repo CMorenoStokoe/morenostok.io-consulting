@@ -23,9 +23,9 @@
 		primary:
 			'bg-[#3300FF] text-white font-semibold border border-[#3300FF] hover:bg-black hover:text-white hover:border-black transition-all duration-150 shadow-xs',
 		navbar:
-			'bg-[#3300FF] text-white font-semibold border border-[#3300FF] hover:bg-black hover:text-white hover:border-black transition-all duration-150 shadow-xs',
+			'bg-[#3300FF] text-white font-normal border border-[#3300FF] hover:bg-black hover:text-white hover:border-black transition-all duration-150 shadow-xs',
 		hero:
-			'bg-[#3300FF] text-white font-semibold border border-[#3300FF] hover:bg-black hover:text-white hover:border-black transition-all duration-150 shadow-xs',
+			'bg-black text-white font-semibold border border-black hover:bg-[#3300FF] hover:text-white hover:border-[#3300FF] transition-all duration-150 shadow-xs',
 		outline:
 			'bg-transparent text-[#3300FF] border border-[#3300FF] hover:bg-[#3300FF] hover:text-white transition-all duration-150'
 	};

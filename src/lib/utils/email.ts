@@ -1,7 +1,7 @@
-// ROT13 obfuscation: hides cmorenostokoe@gmail.com from web scrapers
+// ROT13 obfuscation: hides cmorenostokoe+consulting@gmail.com from web scrapers
 // Evaluated client-side only so static HTML never leaks the raw address.
 
-const ROT13_CIPHER = 'pzberabfgbxbr@tznvy.pbz';
+const ROT13_CIPHER = 'pzberabfgbxbr+pbafhygvat@tznvy.pbz';
 
 function decodeRot13(str: string): string {
 	return str.replace(/[a-zA-Z]/g, (char) => {
