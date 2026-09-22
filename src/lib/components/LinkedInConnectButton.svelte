@@ -21,13 +21,13 @@
 
 	const variantStyles = {
 		primary:
-			'bg-white text-black font-semibold border border-white hover:bg-black hover:text-white transition-all duration-150',
+			'bg-[#3300FF] text-white font-semibold border border-[#3300FF] hover:bg-black hover:text-white hover:border-black transition-all duration-150 shadow-xs',
 		navbar:
-			'bg-white text-black font-semibold border border-white hover:bg-black hover:text-white transition-all duration-150',
+			'bg-[#3300FF] text-white font-semibold border border-[#3300FF] hover:bg-black hover:text-white hover:border-black transition-all duration-150 shadow-xs',
 		hero:
-			'bg-white text-black font-semibold border border-white hover:bg-black hover:text-white transition-all duration-150',
+			'bg-[#3300FF] text-white font-semibold border border-[#3300FF] hover:bg-black hover:text-white hover:border-black transition-all duration-150 shadow-xs',
 		outline:
-			'bg-transparent text-white border border-neutral-700 hover:border-white hover:text-white transition-all duration-150'
+			'bg-transparent text-[#3300FF] border border-[#3300FF] hover:bg-[#3300FF] hover:text-white transition-all duration-150'
 	};
 
 	const sizeStyles = {

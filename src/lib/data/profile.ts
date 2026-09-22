@@ -121,86 +121,77 @@ export const PROFILE_DATA = {
 	},
 	headlineStats: [
 		{
-			value: '£1M+/yr',
-			label: 'Vendor Spend Displaced',
-			detail: 'Displaced legacy vendor BI tooling across front-office trading and risk desks with in-memory OLAP pipelines.'
+			value: '£1M+',
+			label: 'ANNUAL CAPITAL EFFICIENCY',
+			detail: 'Displaced bloated legacy software with custom data architecture.'
 		},
 		{
-			value: '1M+ Records',
-			label: 'Sub-Second Latency',
-			detail: 'High-throughput indexing pipelines processing 1M+ daily market filings and records with sub-400ms query times.'
+			value: '< 250ms',
+			label: 'ZERO-FRICTION DECISIONS',
+			detail: 'Compressed quantitative risk queries from 30+ seconds to sub-second execution.'
 		},
 		{
-			value: '2 Global Pods',
-			label: '100% Team Retention',
-			detail: 'Built and scaled 2 institutional AI engineering capabilities from 0-to-1 at PwC and buy-side fund with zero attrition.'
+			value: '100%',
+			label: 'TEAM RETENTION',
+			detail: 'Built and scaled elite AI engineering divisions from 0-to-1.'
 		},
 		{
 			value: '4+ Years',
-			label: 'Production GenAI Systems',
-			detail: 'Continuous hands-on architecture, evaluation, and deployment of enterprise LLM/agent platforms since early 2022.'
+			label: 'DATA SOVEREIGNTY',
+			detail: 'Deploying secure, private AI infrastructure preventing cloud leakage.'
 		}
 	] as Metric[],
 
 	coreOfferings: [
 		{
 			pillarNumber: '01',
-			title: 'GenAI Strategy & Advisory',
-			tagline: 'Technical stack audits, build-vs-buy evaluations, cost/latency feasibility models, and executive roadmaps.',
-			commercialModel: '£1,000 / Day',
-			rateDetail: 'Available as fractional / part-time strategic retainers',
+			title: 'Board Advisory & AI Strategy',
+			tagline: 'Aligning technical investments with core business objectives to prevent costly missteps.',
+			commercialModel: '[ FRACTIONAL EXECUTIVE PARTNERING ]',
+			rateDetail: 'Fractional executive partnering',
 			scope: [
-				'Technical stack audits and architectural maturity assessments',
-				'Build-vs-buy evaluations for enterprise LLM and agent frameworks',
-				'Cost, token economics, and query latency feasibility models',
-				'Data governance, security perimeter, and compliance roadmaps'
+				'We cut through market hype to deliver brutal build-vs-buy evaluations, cost-feasibility modeling, and clear 90-day execution roadmaps.'
 			],
 			deliverables: [
-				'Target-state architectural blueprints',
-				'Prioritized 90-day technical roadmaps',
-				'Model risk and vendor diligence audits'
+				'Technical stack audits',
+				'Data governance roadmaps',
+				'Vendor diligence'
 			],
 			ctaLabel: '[ INITIATE STRATEGIC REVIEW ]',
 			ctaAction: 'advisory'
 		},
 		{
 			pillarNumber: '02',
-			title: 'Production Architecture',
-			tagline: 'Resilient LLM/agent pipelines, scalable RAG architectures, and low-latency API topologies.',
-			commercialModel: '£1,000 / Day',
-			rateDetail: 'Milestone-based SOW deliverables',
+			title: 'Production Systems Architecture',
+			tagline: 'Architecting secure, proprietary AI platforms tailored to your most complex workflows.',
+			commercialModel: '[ MILESTONE-BASED DELIVERY ]',
+			rateDetail: 'Milestone-based delivery',
 			scope: [
-				'Resilient multi-agent orchestration and workflow execution engines',
-				'Scalable RAG architectures with deterministic citation guardrails',
-				'Graph and vector database topology with in-memory OLAP acceleration',
-				'Low-latency API layers and enterprise Model Context Protocol (MCP) servers'
+				'We design sovereign systems that keep your data private, ensuring deterministic, accurate outputs for high-stakes environments.'
 			],
 			deliverables: [
-				'Production technical specifications and data schemas',
-				'Infrastructure-as-code and deployment topologies',
-				'Observability and zero-leakage telemetry harnesses'
+				'Production specifications',
+				'Infrastructure-as-code',
+				'Zero-leakage security topologies'
 			],
 			ctaLabel: '[ INITIATE STRATEGIC REVIEW ]',
 			ctaAction: 'advisory'
 		},
 		{
 			pillarNumber: '03',
-			title: 'Rapid PoCs & Build-Out',
-			tagline: '2 to 4 week fast technical validation sprints delivered by an elite hands-on delivery pod.',
-			commercialModel: '£500 / Day',
-			rateDetail: 'Blended consultancy delivery rate (2 to 4 week sprints)',
+			title: 'Rapid Validation Pods (2-4 Week Sprints)',
+			tagline: 'Proving return-on-investment before you commit to major capital expenditure.',
+			commercialModel: '[ BLENDED DELIVERY RATE ]',
+			rateDetail: 'Blended delivery rate (2-4 week sprints)',
 			scope: [
-				'2 to 4 week fast technical validation sprints',
-				'Hands-on delivery pod combining Principal architectural leadership with a dedicated implementation engineer',
-				'De-risking high-value AI hypotheses before major CapEx commitment',
-				'Direct embedding into existing codebases and cloud infrastructure'
+				'A dedicated, elite engineering pod embeds directly into your business to build a functional prototype in weeks, not months.'
 			],
 			deliverables: [
-				'Functional working deployment in staging or production',
-				'Production-grade codebase handoff with full test coverage',
-				'Technical documentation and operational runbooks'
+				'Working deployments',
+				'Production-grade code handoffs',
+				'Operational runbooks'
 			],
-			ctaLabel: '[ SCOPE RAPID POC SPRINT (OUTSIDE IR35) ]',
+			ctaLabel: '[ SCOPE VALIDATION POD ]',
 			ctaAction: 'poc'
 		}
 	] as CoreOffering[],

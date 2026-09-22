@@ -53,99 +53,108 @@ END:VCARD`;
 	}
 </script>
 
-<section id="connect" class="py-12 sm:py-16 md:py-20 bg-black border-b border-[#262626] relative">
+<section id="connect" class="py-12 sm:py-16 md:py-20 bg-white text-black relative">
 	<!-- Hidden anchor for legacy engage links -->
 	<div id="engage" class="absolute -top-20 left-0 pointer-events-none" aria-hidden="true"></div>
 
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
 		<!-- Section Header -->
-		<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[#262626] pb-6 sm:pb-8">
+		<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-2">
 			<div class="max-w-3xl space-y-2">
-				<div class="font-mono text-xs uppercase tracking-widest text-[#A3A3A3]">
+				<div class="font-mono text-xs uppercase tracking-widest text-black font-semibold">
 					// Direct Channels & Engagement Architecture
 				</div>
-				<h2 class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-white tracking-tight">
+				<h2 class="text-2xl sm:text-3xl lg:text-4xl font-sans font-bold text-black tracking-tight">
 					Initiate Direct Engagement
 				</h2>
-				<p class="text-sm sm:text-base text-[#CCCCCC] leading-relaxed">
+				<p class="text-sm sm:text-base text-black leading-relaxed">
 					Engagements operate strictly Outside IR35 via outcome-driven Statements of Work, clearly defined milestones, and concrete architectural deliverables.
 				</p>
 			</div>
 
 			<!-- Status Badges -->
 			<div class="flex flex-wrap items-center gap-2 font-mono text-xs">
-				<span class="border border-white bg-white text-black px-2.5 py-1 font-bold">
+				<span class="bg-black text-white px-2.5 py-1 font-bold">
 					[STATUS: OUTSIDE-IR35]
 				</span>
-				<span class="border border-[#333333] bg-[#0A0A0A] text-[#CCCCCC] px-2.5 py-1">
+				<span class="text-black px-2.5 py-1 font-semibold">
 					[MODEL: SOW / DELIVERABLES]
 				</span>
 			</div>
 		</div>
 
-		<!-- Outside-IR35 Compliance Box -->
-		<div class="border border-[#333333] bg-[#0A0A0A] p-5 sm:p-6 space-y-3 shadow-2xs">
-			<div class="flex items-center gap-2 font-mono text-xs font-bold text-white uppercase tracking-wider">
-				<ShieldCheck class="w-4 h-4 text-white shrink-0" />
-				<span>Outside-IR35 Operating Framework & Commercial Standards</span>
+		<!-- Commercial Architecture: Strictly Outside-IR35 Prominent Section -->
+		<div class="bg-white space-y-4">
+			<div class="flex items-center gap-2.5 font-mono text-xs font-bold text-black uppercase tracking-wider">
+				<ShieldCheck class="w-4 h-4 text-black shrink-0" />
+				<span>Commercial Architecture: Strictly Outside-IR35</span>
 			</div>
-			<p class="text-xs sm:text-sm text-[#CCCCCC] leading-relaxed">
-				All advisory, architectural, and engineering engagements are delivered through formal Statements of Work (SOWs). Work is structured around distinct outcomes, production specifications, and auditable deliverables, ensuring full UK compliance and zero employer-substitution ambiguity.
+			<p class="font-sans text-sm text-black leading-relaxed max-w-4xl">
+				All engagements are structured around formal Statements of Work (SOWs), distinct milestones, and concrete architectural deliverables. This operating model ensures zero employer-substitution ambiguity, providing complete UK tax compliance and risk mitigation for your enterprise.
 			</p>
-			<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 font-mono text-xs">
-				<div class="border border-[#222222] bg-black p-3 space-y-1">
-					<div class="text-white font-bold">[FRACTIONAL ADVISORY]</div>
-					<div class="text-[#A3A3A3] text-[11px]">Nominal £1,000/day strategic retainers</div>
+			<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2 font-mono text-xs">
+				<div class="space-y-1">
+					<div class="text-black font-bold">[FRACTIONAL ADVISORY]</div>
+					<div class="text-black text-[11px]">Nominal £1,000/day strategic retainers</div>
 				</div>
-				<div class="border border-[#222222] bg-black p-3 space-y-1">
-					<div class="text-white font-bold">[SYSTEMS ARCHITECTURE]</div>
-					<div class="text-[#A3A3A3] text-[11px]">Nominal £1,000/day milestone SOWs</div>
+				<div class="space-y-1">
+					<div class="text-black font-bold">[SYSTEMS ARCHITECTURE]</div>
+					<div class="text-black text-[11px]">Nominal £1,000/day milestone SOWs</div>
 				</div>
-				<div class="border border-[#222222] bg-black p-3 space-y-1">
-					<div class="text-white font-bold">[RAPID POC PODS]</div>
-					<div class="text-[#A3A3A3] text-[11px]">£500/day blended rate (2-4 week sprints)</div>
+				<div class="space-y-1">
+					<div class="text-black font-bold">[RAPID POC PODS]</div>
+					<div class="text-black text-[11px]">£500/day blended rate (2-4 week sprints)</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- Direct Channels Card & Segmented CTAs -->
-		<div class="border border-white bg-[#0A0A0A] p-6 sm:p-8 space-y-6 shadow-2xs">
-			<div class="space-y-2">
-				<div class="font-mono text-xs uppercase tracking-widest text-[#A3A3A3]">
-					// Direct Channels & Action Triggers
+		<div class="bg-white space-y-6 pt-4">
+			<div class="flex flex-col sm:flex-row items-start gap-5">
+				<div class="shrink-0">
+					<img
+						src="/images/chris-moreno-stokoe.jpg"
+						alt="Dr. Chris Moreno-Stokoe"
+						class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-none grayscale contrast-[1.10]"
+					/>
 				</div>
-				<h3 class="text-xl sm:text-2xl font-display font-bold text-white tracking-tight">
-					Direct Inquiries & Executive Channels
-				</h3>
-				<p class="text-xs sm:text-sm text-[#CCCCCC] leading-relaxed max-w-2xl">
-					Direct communication channels for C-suite leaders, investment partners, and engineering directors.
-				</p>
+				<div class="space-y-2 flex-1">
+					<div class="font-mono text-xs uppercase tracking-widest text-black font-semibold">
+						// Direct Channels & Action Triggers
+					</div>
+					<h3 class="text-xl sm:text-2xl font-sans font-bold text-black tracking-tight">
+						Direct Inquiries & Executive Channels
+					</h3>
+					<p class="text-xs sm:text-sm text-black leading-relaxed max-w-2xl">
+						Direct communication channels with Dr. Chris Moreno-Stokoe for C-suite leaders, investment partners, and engineering directors.
+					</p>
+				</div>
 			</div>
 
 			<!-- Segmented Action Buttons -->
 			<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
 				<a
 					href={reviewMailto}
-					class="inline-flex items-center justify-center gap-2 rounded-none bg-white text-black font-mono text-xs font-bold uppercase tracking-wider py-4 px-6 border border-white hover:bg-black hover:text-white transition-all min-h-[48px] text-center"
+					class="inline-flex items-center justify-center gap-2 rounded-none bg-black text-white font-mono text-xs font-bold uppercase tracking-wider py-4 px-6 border border-black hover:bg-white hover:text-black transition-all min-h-[48px] text-center"
 				>
 					<span>[ INITIATE STRATEGIC REVIEW ]</span>
 				</a>
 
 				<a
 					href={pocMailto}
-					class="inline-flex items-center justify-center gap-2 rounded-none bg-transparent text-white font-mono text-xs font-bold uppercase tracking-wider py-4 px-6 border border-[#404040] hover:border-white hover:bg-[#141414] transition-all min-h-[48px] text-center"
+					class="inline-flex items-center justify-center gap-2 rounded-none bg-white text-black font-mono text-xs font-bold uppercase tracking-wider py-4 px-6 border border-black hover:bg-black hover:text-white transition-all min-h-[48px] text-center"
 				>
 					<span>[ SCOPE RAPID POC SPRINT (OUTSIDE IR35) ]</span>
 				</a>
 			</div>
 
 			<!-- Secondary Direct Links -->
-			<div class="pt-4 border-t border-[#262626] flex flex-wrap items-center justify-between gap-4 text-xs font-mono">
+			<div class="pt-2 flex flex-wrap items-center justify-between gap-4 text-xs font-mono">
 				<div class="flex flex-wrap items-center gap-3">
 					{#if email}
 						<a
 							href={reviewMailto}
-							class="inline-flex items-center gap-1.5 px-3 py-2 border border-[#333333] hover:border-white text-white hover:bg-white hover:text-black transition-all"
+							class="inline-flex items-center gap-1.5 py-1.5 text-black hover:underline transition-all"
 						>
 							<Mail class="w-3.5 h-3.5 shrink-0" />
 							<span>{email}</span>
@@ -155,7 +164,7 @@ END:VCARD`;
 					<button
 						type="button"
 						onclick={downloadVCard}
-						class="inline-flex items-center gap-1.5 px-3 py-2 border border-[#333333] hover:border-white text-[#CCCCCC] hover:text-white transition-all cursor-pointer"
+						class="inline-flex items-center gap-1.5 py-1.5 text-black hover:underline transition-all cursor-pointer"
 					>
 						<Download class="w-3.5 h-3.5 shrink-0" />
 						<span>Save Contact (.vcf)</span>
@@ -167,73 +176,73 @@ END:VCARD`;
 						href={PROFILE_DATA.channels.linkedIn}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="inline-flex items-center gap-1 text-[#CCCCCC] hover:text-white transition-colors"
+						class="inline-flex items-center gap-1.5 text-[#3300FF] font-bold hover:underline transition-colors"
 					>
-						<LinkedinIcon class="w-4 h-4 shrink-0" />
+						<LinkedinIcon class="w-4 h-4 shrink-0 text-[#3300FF]" />
 						<span>LinkedIn</span>
 					</a>
-					<span class="text-[#404040]">•</span>
+					<span class="text-black">•</span>
 					<a
 						href={PROFILE_DATA.channels.github}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="inline-flex items-center gap-1 text-[#CCCCCC] hover:text-white transition-colors"
+						class="inline-flex items-center gap-1 text-black hover:underline transition-colors"
 					>
 						<GithubIcon class="w-4 h-4 shrink-0" />
 						<span>GitHub</span>
 					</a>
-					<span class="text-[#404040]">•</span>
+					<span class="text-black">•</span>
 					<a
 						href={PROFILE_DATA.channels.orcid}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="inline-flex items-center gap-1 text-[#CCCCCC] hover:text-white transition-colors"
+						class="inline-flex items-center gap-1 text-black hover:underline transition-colors"
 					>
-						<BookOpen class="w-4 h-4 shrink-0" />
+						<BookOpen class="w-3.5 h-3.5" />
 						<span>ORCID</span>
 					</a>
 				</div>
 			</div>
 		</div>
 
-		<!-- 4 Structured Framework Cards (Advisory Models) -->
-		<div class="space-y-4 pt-2">
-			<div class="font-mono text-xs uppercase tracking-widest text-[#A3A3A3]">
+		<!-- 4 Structured Framework Cards (clean, unboxed layout) -->
+		<div class="space-y-4 pt-4">
+			<div class="font-mono text-xs uppercase tracking-widest text-black font-semibold">
 				// Advisory Retainers & Operating Frameworks
 			</div>
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
 				{#each PROFILE_DATA.engagementTiers as tier}
-					<div class="border border-[#262626] bg-[#0A0A0A] p-5 sm:p-6 flex flex-col justify-between space-y-4 hover:border-white transition-all shadow-2xs">
+					<div class="bg-white flex flex-col justify-between space-y-4">
 						<div class="space-y-3">
-							<div class="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider text-[#A3A3A3]">
-								<Clock class="w-3.5 h-3.5 text-[#A3A3A3]" />
+							<div class="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider text-black">
+								<Clock class="w-3.5 h-3.5 text-black" />
 								<span>{tier.duration}</span>
 							</div>
 
-							<h3 class="text-base font-display font-bold text-white leading-snug">
+							<h3 class="text-base font-sans font-bold text-black leading-snug">
 								{tier.name}
 							</h3>
 
-							<p class="text-xs text-[#CCCCCC] leading-relaxed">
+							<p class="text-xs text-black leading-relaxed">
 								{tier.tagline}
 							</p>
 
-							<div class="border-t border-[#1C1C1C] pt-3 space-y-1">
-								<div class="font-mono text-[10px] uppercase tracking-widest text-[#888888]">
+							<div class="pt-2 space-y-1">
+								<div class="font-mono text-[10px] uppercase tracking-widest text-black font-semibold">
 									Ideal For:
 								</div>
-								<p class="text-xs text-[#D4D4D4] leading-relaxed">
+								<p class="text-xs text-black leading-relaxed">
 									{tier.idealFor}
 								</p>
 							</div>
 
-							<div class="border-t border-[#1C1C1C] pt-3 space-y-2">
-								<div class="font-mono text-[10px] uppercase tracking-widest text-[#888888]">
+							<div class="pt-2 space-y-2">
+								<div class="font-mono text-[10px] uppercase tracking-widest text-black font-semibold">
 									Deliverables:
 								</div>
 								{#each tier.deliverables as deliv}
-									<div class="flex items-start gap-2 text-xs text-white leading-relaxed font-mono">
-										<span class="text-white font-bold shrink-0 mt-0.5">•</span>
+									<div class="flex items-start gap-2 text-xs text-black leading-relaxed font-mono">
+										<span class="text-black font-bold shrink-0 mt-0.5">•</span>
 										<span>{deliv}</span>
 									</div>
 								{/each}

@@ -101,7 +101,7 @@
 	{@html `<script type="application/ld+json">${JSON.stringify(serviceSchema)}</script>`}
 </svelte:head>
 
-<div class="min-h-screen flex flex-col bg-white text-slate-900 selection:bg-slate-900 selection:text-white font-sans">
+<div class="min-h-screen flex flex-col bg-white text-black selection:bg-black selection:text-white font-sans">
 	<Navbar />
 	<main class="flex-1">
 		{@render children()}
