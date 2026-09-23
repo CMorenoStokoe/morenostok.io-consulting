@@ -11,7 +11,7 @@
 		{
 			headline: '£1M+',
 			label: 'ANNUAL CAPITAL EFFICIENCY',
-			description: 'Displaced bloated legacy software with custom data architecture.'
+			description: 'Leading projects to deliver AI efficiencies and eliminate legacy software costs.'
 		},
 		{
 			headline: '< 250ms',

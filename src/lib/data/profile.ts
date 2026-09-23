@@ -124,7 +124,7 @@ export const PROFILE_DATA = {
 		{
 			value: '£1M+',
 			label: 'ANNUAL CAPITAL EFFICIENCY',
-			detail: 'Displaced bloated legacy software with custom data architecture.'
+			detail: 'Leading projects to deliver AI efficiencies and eliminate legacy software costs.'
 		},
 		{
 			value: '< 250ms',
