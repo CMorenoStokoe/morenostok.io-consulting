@@ -102,9 +102,9 @@
 	});
 </script>
 
-<div class="w-full bg-white border border-black p-4 space-y-3 font-mono text-black">
+<div class="w-full bg-white border border-black p-3 sm:p-4 space-y-2 sm:space-y-3 font-mono text-black">
 	<!-- Header Telemetry Row -->
-	<div class="flex items-center justify-between gap-2 border-b border-black/20 pb-2">
+	<div class="flex items-center justify-between gap-2 border-b border-black/20 pb-1.5 sm:pb-2">
 		<span class="text-[9px] uppercase font-bold tracking-widest text-black">
 			// AUDITED METRICS
 		</span>
@@ -114,21 +114,21 @@
 	</div>
 
 	<!-- Headline with Typewriter Cursor -->
-	<div class="min-h-[40px] flex items-center font-sans font-bold text-2xl sm:text-3xl text-black tracking-tight">
+	<div class="min-h-[32px] sm:min-h-[40px] flex items-center font-sans font-bold text-xl sm:text-3xl text-black tracking-tight">
 		<span>{displayedHeadline}</span>
-		<span class="inline-block w-2.5 h-6 bg-[#3300FF] ml-1.5 animate-pulse"></span>
+		<span class="inline-block w-2 sm:w-2.5 h-5 sm:h-6 bg-[#3300FF] ml-1.5 animate-pulse"></span>
 	</div>
 
 	<!-- Fading Details: Label & Description -->
 	<div
-		class="space-y-1.5 transition-opacity duration-500 ease-in-out min-h-[72px]"
+		class="space-y-1 sm:space-y-1.5 transition-opacity duration-500 ease-in-out min-h-[58px] sm:min-h-[72px]"
 		class:opacity-100={showDetails}
 		class:opacity-0={!showDetails}
 	>
-		<div class="font-mono text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-black">
+		<div class="font-mono text-[9px] sm:text-[11px] font-bold uppercase tracking-wider text-black">
 			{METRICS[currentIndex].label}
 		</div>
-		<p class="font-sans text-xs text-black/90 leading-relaxed">
+		<p class="font-sans text-[11px] sm:text-xs text-black/90 leading-relaxed">
 			{METRICS[currentIndex].description}
 		</p>
 	</div>

@@ -9,21 +9,40 @@
 	import { getEmail } from '$lib/utils/email';
 
 	let email = $state('');
+	let emailCopied = $state(false);
 
 	onMount(() => {
 		email = getEmail();
 	});
+
+	function handleEmailClick() {
+		if (!email) return;
+		// 1. Try launching default email client
+		window.location.href = `mailto:${email}`;
+
+		// 2. Also copy to clipboard so if client has no default mail app configured, they have the email
+		if (navigator.clipboard) {
+			navigator.clipboard.writeText(email).then(() => {
+				emailCopied = true;
+				setTimeout(() => {
+					emailCopied = false;
+				}, 3000);
+			});
+		}
+	}
 </script>
 
-<section class="relative pt-12 sm:pt-16 md:pt-20 bg-white text-black">
+<section class="relative pt-4 sm:pt-16 md:pt-20 bg-white text-black">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex flex-col md:flex-row items-start gap-6 sm:gap-8 lg:gap-12 pb-12 sm:pb-16">
 			<!-- Left Column: Dawnbreak Dotmatrix Insignia + Dynamic Typewriter Impact Metrics -->
-			<div class="shrink-0 w-full sm:w-48 md:w-52 lg:w-60 flex flex-col gap-5 relative md:-mt-6 lg:-mt-10">
-				<div class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56">
+			<div class="shrink-0 w-full sm:w-48 md:w-52 lg:w-60 flex flex-row sm:flex-col items-center sm:items-stretch gap-4 sm:gap-5 relative md:-mt-6 lg:-mt-10">
+				<div class="w-24 h-24 min-w-[96px] sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 shrink-0">
 					<DawnbreakMatrix />
 				</div>
-				<TypewriterMetric />
+				<div class="flex-1 w-full min-w-0">
+					<TypewriterMetric />
+				</div>
 			</div>
 
 			<div class="flex-1 max-w-4xl">
@@ -57,13 +76,14 @@
 						variant="hero"
 					/>
 					{#if email}
-						<a
-							href="mailto:{email}"
-							class="inline-flex items-center justify-center gap-2 rounded-none bg-white text-black hover:bg-black hover:text-white border border-black px-6 py-3.5 font-mono text-xs font-semibold uppercase tracking-wider transition-all min-h-[48px]"
+						<button
+							type="button"
+							onclick={handleEmailClick}
+							class="inline-flex items-center justify-center gap-2 rounded-none bg-white text-black hover:bg-black hover:text-white border border-black px-6 py-3.5 font-mono text-xs font-semibold uppercase tracking-wider transition-all min-h-[48px] cursor-pointer"
 						>
 							<Mail class="w-4 h-4 shrink-0" />
-							<span>[ DIRECT EMAIL ]</span>
-						</a>
+							<span>{emailCopied ? '[ EMAIL COPIED! ]' : '[ DIRECT EMAIL ]'}</span>
+						</button>
 					{/if}
 				</div>
 			</div>
@@ -72,24 +92,4 @@
 
 	<!-- Previous Client & Institutional Track Record Logos -->
 	<CredibilityLogos />
-
-	<!-- Muted Industries / Sector Coverage Below Client Ticker -->
-	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-4 pb-2">
-		<div class="font-mono text-[10px] sm:text-[11px] text-black/60 tracking-widest uppercase flex flex-wrap items-center gap-x-2.5 gap-y-1">
-			<span class="font-bold text-black/75">// INDUSTRIES:</span>
-			<span>AI</span>
-			<span class="text-black/30">/</span>
-			<span>HEDGE FUND</span>
-			<span class="text-black/30">/</span>
-			<span>FINANCE</span>
-			<span class="text-black/30">/</span>
-			<span>CONSULTING</span>
-			<span class="text-black/30">/</span>
-			<span>HEALTHCARE</span>
-			<span class="text-black/30">/</span>
-			<span>BUSINESS</span>
-			<span class="text-black/30">/</span>
-			<span>TECH</span>
-		</div>
-	</div>
 </section>

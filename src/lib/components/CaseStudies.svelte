@@ -20,6 +20,23 @@
 			</div>
 		</div>
 
+		<!-- Uniform Muted Sector List Directly Below the Line -->
+		<div class="-mt-4 font-mono text-[10px] sm:text-[11px] text-black/40 tracking-widest uppercase flex flex-wrap items-center gap-x-2.5 gap-y-1">
+			<span>AI</span>
+			<span>/</span>
+			<span>HEDGE FUND</span>
+			<span>/</span>
+			<span>FINANCE</span>
+			<span>/</span>
+			<span>CONSULTING</span>
+			<span>/</span>
+			<span>HEALTHCARE</span>
+			<span>/</span>
+			<span>BUSINESS</span>
+			<span>/</span>
+			<span>TECH</span>
+		</div>
+
 		<!-- 1. Executive Anchor Studies (Verition + PwC) -->
 		<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 			<!-- Card 1: Verition Fund Management (2/3 Width) -->

@@ -6,10 +6,25 @@
 	import { getEmail } from '$lib/utils/email';
 
 	let email = $state('');
+	let emailCopied = $state(false);
 
 	onMount(() => {
 		email = getEmail();
 	});
+
+	function handleEmailClick() {
+		if (!email) return;
+		window.location.href = `mailto:${email}`;
+
+		if (navigator.clipboard) {
+			navigator.clipboard.writeText(email).then(() => {
+				emailCopied = true;
+				setTimeout(() => {
+					emailCopied = false;
+				}, 3000);
+			});
+		}
+	}
 </script>
 
 <section id="connect" class="py-12 sm:py-16 md:py-20 bg-white text-black relative">
@@ -95,13 +110,14 @@
 				</a>
 
 				{#if email}
-					<a
-						href="mailto:{email}"
-						class="inline-flex items-center justify-center gap-2.5 rounded-none bg-white text-black hover:bg-black hover:text-white border border-black px-6 py-3 font-mono text-xs font-semibold uppercase tracking-wider transition-all min-h-[44px] w-full"
+					<button
+						type="button"
+						onclick={handleEmailClick}
+						class="inline-flex items-center justify-center gap-2.5 rounded-none bg-white text-black hover:bg-black hover:text-white border border-black px-6 py-3 font-mono text-xs font-semibold uppercase tracking-wider transition-all min-h-[44px] w-full cursor-pointer"
 					>
 						<Mail class="w-4 h-4 shrink-0" />
-						<span>Direct Email</span>
-					</a>
+						<span>{emailCopied ? '[ EMAIL COPIED! ]' : 'Direct Email'}</span>
+					</button>
 				{:else}
 					<span class="text-center font-mono text-[11px] text-black/60 italic py-1">
 						[Loading protected email...]
