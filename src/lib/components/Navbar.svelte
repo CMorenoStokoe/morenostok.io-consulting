@@ -20,7 +20,7 @@
 				{PROFILE_DATA.name}
 			</span>
 			<span class="text-[9px] sm:text-[10px] text-black font-mono tracking-wider uppercase font-normal">
-				Independent Strategic AI Advisory
+				AI Strategy & Technical Consultancy
 			</span>
 		</a>
 

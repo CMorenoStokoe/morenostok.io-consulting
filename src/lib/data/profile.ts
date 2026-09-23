@@ -89,7 +89,6 @@ export const PROFILE_DATA = {
 	credentialsHighlight: 'Lead AI Engineer @ Verition Fund Management • AI Team Founder @ PwC • Digital Transformation & Research @ NHS • PhD Human-Computer Engineering',
 	contracting: {
 		status: 'OUTSIDE-IR35-COMPLIANT',
-		model: 'SOW / DELIVERABLES',
 		capacity: 'FRACTIONAL & SPRINT',
 		complianceNote: 'All engagements are Outside IR35 compliant via outcome-driven Statements of Work (SOWs), clear milestones, and concrete deliverables.'
 	},
@@ -168,7 +167,7 @@ export const PROFILE_DATA = {
 			commercialModel: '[ MILESTONE-BASED DELIVERY ]',
 			rateDetail: 'Milestone-based delivery',
 			scope: [
-				'We design sovereign systems that keep your data private, ensuring deterministic, accurate outputs for high-stakes environments.'
+				'We design private systems that keep your data secure, ensuring deterministic, accurate outputs for high-stakes environments.'
 			],
 			deliverables: [
 				'Production specifications',

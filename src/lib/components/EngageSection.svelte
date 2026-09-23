@@ -51,9 +51,6 @@
 				<span class="bg-black text-white px-2.5 py-1 font-bold">
 					[OUTSIDE IR35 COMPLIANT]
 				</span>
-				<span class="text-black px-2.5 py-1 font-semibold">
-					[SOW / DELIVERABLES]
-				</span>
 			</div>
 		</div>
 

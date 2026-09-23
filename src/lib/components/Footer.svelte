@@ -10,14 +10,7 @@
 <footer class="border-t border-black bg-white py-10 sm:py-12 text-black text-xs font-mono">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6">
-			<div class="space-y-1">
-				<div class="text-black font-bold text-sm uppercase tracking-widest font-sans">
-					{PROFILE_DATA.name}
-				</div>
-				<p class="text-xs text-black font-normal font-mono">
-					London, United Kingdom • Independent Strategic AI Advisory
-				</p>
-			</div>
+			<div></div>
 
 			<div class="flex flex-wrap items-center gap-4 sm:gap-6 text-xs font-mono uppercase tracking-wider text-black font-semibold">
 				<a href="#case-studies" class="hover:underline py-1">Case Studies</a>

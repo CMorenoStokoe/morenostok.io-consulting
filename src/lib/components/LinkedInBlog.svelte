@@ -31,13 +31,12 @@
 		<!-- Section Header / Tracking Label -->
 		<div class="space-y-2">
 			<div class="font-mono text-xs uppercase tracking-widest text-black font-semibold">
-				// Thought Leadership
+				// Blog
 			</div>
 			<div class="flex items-center gap-3 font-mono text-xs text-black font-semibold">
 				<span class="bg-black text-white px-2 py-0.5 uppercase tracking-wider text-[10px]">
 					[LATEST POST]
 				</span>
-				<span>// Blog</span>
 			</div>
 		</div>
 

@@ -48,7 +48,7 @@
 			<div class="flex-1 max-w-4xl">
 				<!-- Kicker -->
 				<div class="font-mono text-[11px] text-black tracking-widest uppercase mb-4 font-semibold">
-					// INDEPENDENT STRATEGIC AI ADVISORY
+					// VETERAN GENAI ADVISORY
 				</div>
 
 				<!-- Headline -->
@@ -57,16 +57,9 @@
 				</h1>
 
 				<!-- Sub-headline -->
-				<p class="font-sans text-lg text-black leading-relaxed max-w-3xl mb-6">
+				<p class="font-sans text-lg text-black leading-relaxed max-w-3xl mb-8">
 					Positioning enterprise leadership for an AI-driven future. I advise executive boards on AI strategy, manage proprietary intelligence build-outs, and drive enterprise transformations with a specialization in expert agents.
 				</p>
-
-				<!-- Credentials Bar -->
-				<div class="font-mono text-[10px] text-black tracking-widest uppercase mb-8 flex flex-wrap gap-4 font-semibold">
-					<span>[01] LEADING AI @ VERITION FUND & PWC</span>
-					<span>[02] PHD DATA INTELLIGENCE</span>
-					<span>[03] FOUNDING GENAI TEAMS SINCE 2022</span>
-				</div>
 
 				<!-- CTA Actions -->
 				<div class="pt-2 flex flex-wrap items-center gap-4">

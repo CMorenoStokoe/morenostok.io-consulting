@@ -35,9 +35,6 @@
 		<span class="font-bold uppercase tracking-widest text-black text-[11px]">
 			// Core Systems &amp; Model Engineering Stack
 		</span>
-		<span class="text-[10px] font-bold text-[#3300FF]">
-			[20 ARCHITECTURAL ENGINES]
-		</span>
 	</div>
 
 	<!-- High Density Multi-line Grid -->
