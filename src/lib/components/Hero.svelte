@@ -53,7 +53,7 @@
 
 				<!-- Headline -->
 				<h1 class="font-sans text-5xl md:text-7xl font-bold text-black leading-[1.05] tracking-tight mb-6">
-					Translating Generative AI into Institutional Execution.
+					Over-the-Horizon AI Strategy & Execution.
 				</h1>
 
 				<!-- Sub-headline -->
