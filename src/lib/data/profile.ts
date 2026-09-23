@@ -321,18 +321,18 @@ export const PROFILE_DATA = {
 		{
 			id: 'pwc-linkedin',
 			organization: 'PwC UK',
-			role: 'Founding Lead AI Engineer (Operate)',
+			role: 'Founding Lead AI Engineer & GCP Ambassador (Operate)',
 			period: '2022',
 			location: 'London & Belfast',
-			title: 'PwC "LinkedIn": Enterprise Resource Searcher & Talent Matching',
-			challenge: 'PwC Operate partners and resource managers spent up to 8 hours per project role manually combing through spreadsheets and CV repositories to staff engagements across thousands of practitioners.',
-			solution: 'Engineered the PwC Resource Searcher (PwC "LinkedIn"): an enterprise-grade data product used by a 4,000-person business unit to match appropriate resources with client projects using talent intelligence algorithms and high-velocity search pipelines.',
+			title: 'PwC "LinkedIn": Enterprise Resource Searcher & Cloud AI Integration',
+			challenge: 'PwC Operate partners and resource managers spent up to 8 hours per project role manually combing through spreadsheets and CV repositories to staff engagements across thousands of practitioners, while the firm needed accelerated adoption of cloud AI infrastructure.',
+			solution: 'Served as GCP Ambassador for PwC, driving firm-wide Google Cloud integration by founding a 200+ member global community for sharing cloud AI experiences and adoption. Attended Google partner workshops representing the firm, fostered multiple internal AI developments, and engineered the PwC Resource Searcher to algorithmically match practitioners to client projects.',
 			impact: [
 				'High-throughput talent matching pipeline indexing 4,000+ practitioners, reducing staffing turnaround from 8 hours down to 2 hours (75% reduction)',
-				'Generated £1M+ in annual billed revenue by deploying custom AI apps focusing on streamlining human operational workflows',
-				'Scaled internal AI engineering community from scratch to 200+ active practitioners across the firm'
+				'GCP Ambassador for PwC: founded 200+ member global community for cloud AI adoption and represented the firm at Google partner workshops',
+				'Encouraged multiple high-impact internal developments and generated £1M+ in annual billed efficiency across operations'
 			],
-			techStack: ['React', 'GCP', 'BigQuery', 'Google Apps Script', 'JavaScript']
+			techStack: ['GCP', 'Vertex AI', 'BigQuery', 'React', 'Google Apps Script', 'JavaScript']
 		}
 	] as CaseStudy[],
 

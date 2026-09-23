@@ -68,7 +68,7 @@
 			<div class="lg:col-span-1 bg-white border border-black p-5 sm:p-6 flex flex-col justify-between space-y-4">
 				<div>
 					<div class="font-mono text-[11px] text-black tracking-wider uppercase mb-1.5 font-bold">
-						PWC UK // 2022
+						PWC UK // GCP AMBASSADOR // 2022
 					</div>
 
 					<h3 class="font-sans text-xl sm:text-2xl font-bold text-black mb-3 leading-tight">
@@ -76,14 +76,14 @@
 					</h3>
 
 					<p class="font-sans text-xs sm:text-sm text-black leading-relaxed">
-						Founded a high-velocity AI squad delivering algorithmic resource matching for a 4,000-person division. Slashed role allocation times from 8 hours to 2 hours, generating ~$1M in billed efficiency gains and seeding an enterprise AI community of 200+ practitioners.
+						Served as GCP Ambassador for PwC, driving firm-wide Google Cloud integration by founding a 200+ member global community for cloud AI adoption and knowledge sharing. Led partner workshops representing the firm, spurred multiple internal developments, and built algorithmic resource matching that slashed staffing times from 8h to 2h across 4,000 practitioners.
 					</p>
 				</div>
 
 				<div class="pt-2 border-t border-black/15 flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[11px]">
 					<span class="text-black font-bold">75% TIME REDUCTION</span>
 					<span class="text-black/30">/</span>
-					<span class="text-black font-bold">~$1M BILLED IMPACT</span>
+					<span class="text-black font-bold">200+ MEMBER AI COMMUNITY</span>
 				</div>
 			</div>
 		</div>
