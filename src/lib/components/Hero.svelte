@@ -3,7 +3,6 @@
 	import { Mail } from '@lucide/svelte';
 	import { PROFILE_DATA } from '$lib/data/profile';
 	import DawnbreakMatrix from '$lib/components/DawnbreakMatrix.svelte';
-	import TypewriterMetric from '$lib/components/TypewriterMetric.svelte';
 	import CredibilityLogos from '$lib/components/CredibilityLogos.svelte';
 	import LinkedInConnectButton from '$lib/components/LinkedInConnectButton.svelte';
 	import { getEmail } from '$lib/utils/email';
@@ -17,10 +16,8 @@
 
 	function handleEmailClick() {
 		if (!email) return;
-		// 1. Try launching default email client
 		window.location.href = `mailto:${email}`;
 
-		// 2. Also copy to clipboard so if client has no default mail app configured, they have the email
 		if (navigator.clipboard) {
 			navigator.clipboard.writeText(email).then(() => {
 				emailCopied = true;
@@ -30,18 +27,22 @@
 			});
 		}
 	}
+
+	const METRICS = [
+		{ value: '£1M+', label: 'Annual AI Efficiency' },
+		{ value: '< 250ms', label: 'Query Latency' },
+		{ value: '100%', label: 'Team Retention' },
+		{ value: '4+ Yrs', label: 'Leading GenAI Teams' }
+	];
 </script>
 
 <section class="relative pt-4 sm:pt-16 md:pt-20 bg-white text-black">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex flex-col md:flex-row items-start gap-6 sm:gap-8 lg:gap-12 pb-12 sm:pb-16">
-			<!-- Left Column: Dawnbreak Dotmatrix Insignia + Dynamic Typewriter Impact Metrics -->
-			<div class="shrink-0 w-full sm:w-48 md:w-52 lg:w-60 flex flex-row sm:flex-col items-center sm:items-stretch gap-4 sm:gap-5 relative md:-mt-6 lg:-mt-10">
-				<div class="w-24 h-24 min-w-[96px] sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 shrink-0">
+			<!-- Left Column: Dawnbreak Dotmatrix Insignia -->
+			<div class="shrink-0 flex items-start justify-center md:justify-start relative md:-mt-6 lg:-mt-10">
+				<div class="w-32 h-32 sm:w-44 sm:h-44 md:w-52 md:h-52 lg:w-60 lg:h-60">
 					<DawnbreakMatrix />
-				</div>
-				<div class="flex-1 w-full min-w-0">
-					<TypewriterMetric />
 				</div>
 			</div>
 
@@ -57,12 +58,22 @@
 				</h1>
 
 				<!-- Sub-headline -->
-				<p class="font-sans text-lg text-black leading-relaxed max-w-3xl mb-8">
+				<p class="font-sans text-lg text-black leading-relaxed max-w-3xl mb-6">
 					Positioning enterprise leadership for an AI-driven future. I advise executive boards on AI strategy, manage proprietary intelligence build-outs, and drive enterprise transformations with a specialization in expert agents.
 				</p>
 
+				<!-- Static Metric Badges -->
+				<div class="flex flex-wrap gap-3 mb-8">
+					{#each METRICS as metric}
+						<div class="border border-black px-3 py-2 font-mono flex flex-col">
+							<span class="text-xl sm:text-2xl font-bold text-black leading-none">{metric.value}</span>
+							<span class="text-[9px] uppercase tracking-widest text-black/60 mt-0.5">{metric.label}</span>
+						</div>
+					{/each}
+				</div>
+
 				<!-- CTA Actions -->
-				<div class="pt-2 flex flex-wrap items-center gap-4">
+				<div class="flex flex-wrap items-center gap-4">
 					<LinkedInConnectButton
 						text="[ CONNECT ON LINKEDIN ]"
 						size="lg"

@@ -55,16 +55,16 @@
 		</div>
 
 		<!-- Commercial Model Summary Grid -->
-		<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2 font-mono text-xs border-t border-b border-black py-6">
-			<div class="space-y-1">
+		<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono text-xs py-6">
+			<div class="bg-black/[0.04] border border-black/10 p-4 space-y-1">
 				<div class="text-black font-bold">[FRACTIONAL ADVISORY]</div>
 				<div class="text-black text-[11px]">Strategic board retainers &amp; executive alignment.</div>
 			</div>
-			<div class="space-y-1">
+			<div class="bg-black/[0.04] border border-black/10 p-4 space-y-1">
 				<div class="text-black font-bold">[SYSTEMS ARCHITECTURE]</div>
 				<div class="text-black text-[11px]">Outcome-based milestones &amp; architectural deliverables.</div>
 			</div>
-			<div class="space-y-1">
+			<div class="bg-black/[0.04] border border-black/10 p-4 space-y-1">
 				<div class="text-black font-bold">[RAPID POC PODS]</div>
 				<div class="text-black text-[11px]">2-to-4-week high-velocity engineering sprints.</div>
 			</div>

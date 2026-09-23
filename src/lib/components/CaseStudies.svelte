@@ -11,12 +11,12 @@
 					// Track Record & Systems Architecture
 				</div>
 				<h2 class="text-xl sm:text-2xl lg:text-3xl font-sans font-bold text-black tracking-tight">
-					Verified Case Studies
+					Case Studies
 				</h2>
 			</div>
 
 			<div class="shrink-0 font-mono text-xs text-black font-semibold">
-				[AUDITED PRODUCTION METRICS]
+				[PRODUCTION METRICS]
 			</div>
 		</div>
 
@@ -30,6 +30,8 @@
 			<span>/</span>
 			<span>CONSULTING</span>
 			<span>/</span>
+			<span>DEFENCE</span>
+			<span>/</span>
 			<span>HEALTHCARE</span>
 			<span>/</span>
 			<span>BUSINESS</span>
@@ -37,9 +39,9 @@
 			<span>TECH</span>
 		</div>
 
-		<!-- 1. Executive Anchor Studies (Verition + PwC) -->
+		<!-- 1. Executive Anchor Studies (Verition + PwC + Royal Navy) -->
 		<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-			<!-- Card 1: Verition Fund Management (2/3 Width) -->
+			<!-- Card 1: Verition Fund Management (full width on lg, spans 2) -->
 			<div class="lg:col-span-2 bg-white border border-black p-5 sm:p-6 flex flex-col justify-between space-y-4">
 				<div>
 					<div class="font-mono text-[11px] text-black tracking-wider uppercase mb-1.5 font-bold">
@@ -47,11 +49,11 @@
 					</div>
 
 					<h3 class="font-sans text-xl sm:text-2xl font-bold text-black mb-3 leading-tight">
-						Scaling a Sovereign AI Division &amp; Delivering £1M+ in Annual Savings
+						Scaling an AI Division & Delivering £1M+ in Annual Savings
 					</h3>
 
 					<p class="font-sans text-xs sm:text-sm text-black leading-relaxed">
-						Engineered a sovereign enterprise AI platform and ultra-low-latency DuckDB analytics engine across Risk, PnL, and front-office trading. Displaced bloated legacy BI software stacks, delivering over £1M in annual licensing efficiency while compressing queries from 30+ seconds down to sub-second execution.
+						Engineered an enterprise AI platform and ultra-low-latency DuckDB analytics engine across Risk, PnL, and front-office trading. Displaced bloated legacy BI software stacks, delivering over £1M in annual licensing efficiency while compressing queries from 30+ seconds down to sub-second execution.
 					</p>
 				</div>
 
@@ -64,7 +66,7 @@
 				</div>
 			</div>
 
-			<!-- Card 2: PwC UK (1/3 Width) -->
+			<!-- Card 2: PwC UK -->
 			<div class="lg:col-span-1 bg-white border border-black p-5 sm:p-6 flex flex-col justify-between space-y-4">
 				<div>
 					<div class="font-mono text-[11px] text-black tracking-wider uppercase mb-1.5 font-bold">
@@ -86,14 +88,38 @@
 					<span class="text-black font-bold">200+ MEMBER AI COMMUNITY</span>
 				</div>
 			</div>
+
+			<!-- Card 3: Royal Navy (full width row) -->
+			<div class="lg:col-span-3 bg-white border border-black p-5 sm:p-6 flex flex-col sm:flex-row justify-between gap-6">
+				<div class="flex-1 space-y-3">
+					<div class="font-mono text-[11px] text-black tracking-wider uppercase font-bold">
+						HM ROYAL NAVY // PALANTIR FDE // 2021
+					</div>
+
+					<h3 class="font-sans text-xl sm:text-2xl font-bold text-black leading-tight">
+						First AI Deployment for the Royal Navy: Fleet Air Arm Logistics Intelligence
+					</h3>
+
+					<p class="font-sans text-xs sm:text-sm text-black leading-relaxed max-w-3xl">
+						Architected the ontological data model underpinning the Royal Navy's first operational AI system for Fleet Air Arm logistics and repair intelligence. Trained by Palantir as a Forward Deployed Engineer (FDE) to architect Foundry systems, delivering a production-grade knowledge graph enabling predictive maintenance and logistics decision support for naval aviation assets.
+					</p>
+				</div>
+
+				<div class="flex flex-col justify-between gap-4 sm:min-w-[200px]">
+					<div class="pt-2 sm:pt-0 border-t sm:border-t-0 border-black/15 flex flex-wrap sm:flex-col items-start gap-x-4 gap-y-1 font-mono text-[11px]">
+						<span class="text-black font-bold">FIRST RN AI DEPLOYMENT</span>
+						<span class="text-black/30 hidden sm:block">/</span>
+						<span class="text-black/30 sm:hidden">/</span>
+						<span class="text-black font-bold">PALANTIR FOUNDRY FDE</span>
+						<span class="text-black/30">/</span>
+						<span class="text-black font-bold">FLEET AIR ARM ONTOLOGY</span>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<!-- 2. Deployed Systems & Core Infrastructure (3-Column Dense Grid) -->
+		<!-- 2. Deployed Systems & Core Infrastructure -->
 		<div class="space-y-3">
-			<div class="font-mono text-[11px] text-black tracking-widest uppercase font-bold">
-				// DEPLOYED SYSTEMS &amp; CORE INFRASTRUCTURE
-			</div>
-
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 				<!-- System 1: Verition VISOR -->
 				<div class="bg-white border border-black p-4 space-y-2">
@@ -104,7 +130,7 @@
 						Sub-Second Analytics &amp; SEC EDGAR AI
 					</h4>
 					<p class="font-sans text-xs text-black/85 leading-relaxed">
-						Full-stack Tableau replacement ingesting Bloomberg chat and SEC EDGAR filings for sub-250ms query processing over 1M+ daily market transactions.
+						Full-stack Tableau replacement ingesting Bloomberg chat and SEC EDGAR filings for sub-250ms quantitative risk and portfolio analytics.
 					</p>
 				</div>
 
@@ -117,7 +143,7 @@
 						Connected MCPs &amp; Model Garden
 					</h4>
 					<p class="font-sans text-xs text-black/85 leading-relaxed">
-						Sovereign LLM infrastructure serving 60k+ queries with 99.5% uptime, permissioned proxy bridges, and zero enterprise data leakage.
+						Internal LLM infrastructure serving 60k+ queries with 99.5% uptime, permissioned proxy bridges, and zero enterprise data leakage.
 					</p>
 				</div>
 
@@ -136,11 +162,11 @@
 			</div>
 		</div>
 
-		<!-- 3. Foundational Contracting Heritage (Dauntless R&D) -->
+		<!-- 3. Digitisation Contracting Heritage (Dauntless R&D) -->
 		<div class="pt-2 space-y-3">
-			<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-t border-black pt-4">
+			<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 pt-4">
 				<div class="font-mono text-xs font-bold uppercase tracking-widest text-black">
-					// CONTRACTING HERITAGE (DAUNTLESS R&amp;D)
+					// DIGITISATION CONTRACTING HERITAGE (DAUNTLESS R&amp;D)
 				</div>
 				<span class="text-[11px] text-black/70 font-mono">
 					Healthcare, epidemiological simulation &amp; data intelligence

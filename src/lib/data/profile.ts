@@ -294,7 +294,7 @@ export const PROFILE_DATA = {
 			challenge: 'Portfolio managers, risk officers, and executive desks faced severe data bottlenecks from overnight Bloomberg chats, SEC filings, and 30-to-60 second relational query latencies.',
 			solution: 'Engineered Visor: a full-stack "Tableau replacement" data intelligence app deployed across Risk, PnL, Treasury & front-office. Architected front-office equity market data AI retrieving and processing SEC EDGAR filings with citations, automated PM email and Bloomberg chat synthesis flows (including morning audio podcast catch-ups), and high-performance DuckDB pipelines.',
 			impact: [
-				'Processed 1M+ daily market transactions and SEC filing records with sub-400ms query latency (reduced from 30s)',
+				'Compressed quantitative risk query latency from 30+ seconds to sub-400ms across Risk, PnL and Treasury desks',
 				'Displaced legacy enterprise BI vendor tooling, delivering £1M+/yr in annual licensing and infrastructure savings',
 				'Full buy-side adoption across Risk, PnL, Treasury, and executive decision-makers'
 			],
@@ -332,6 +332,22 @@ export const PROFILE_DATA = {
 				'Catalyzed multiple high-impact internal AI initiatives and generated £1M+ in annual billed efficiency across operations'
 			],
 			techStack: ['GCP', 'Vertex AI', 'BigQuery', 'React', 'Google Apps Script', 'JavaScript']
+		},
+		{
+			id: 'royal-navy-palantir',
+			organization: 'HM Royal Navy',
+			role: 'Forward Deployed Engineer (FDE), Palantir Technologies',
+			period: '2021',
+			location: 'United Kingdom',
+			title: 'Royal Navy Fleet Air Arm: First Operational AI Deployment for Logistics & Repair Intelligence',
+			challenge: 'The Royal Navy\'s Fleet Air Arm required a structured, machine-readable ontology to underpin AI-driven logistics and repair intelligence for naval aviation assets, enabling predictive maintenance and decision support at scale.',
+			solution: 'Trained by Palantir as a Forward Deployed Engineer (FDE) to architect Foundry systems. Designed and built the ontological data model for the Royal Navy\'s first operational AI deployment, representing Fleet Air Arm aircraft, components, maintenance schedules, and repair workflows as a structured knowledge graph within Palantir Foundry.',
+			impact: [
+				'First AI deployment in the Royal Navy: production-grade ontology powering logistics and repair intelligence for Fleet Air Arm assets',
+				'Delivered a Palantir Foundry knowledge graph enabling predictive maintenance and decision support for naval aviation',
+				'Trained as Palantir FDE, applying enterprise ontology architecture to a live defence programme'
+			],
+			techStack: ['Palantir Foundry', 'Ontology Design', 'Knowledge Graphs', 'Python']
 		}
 	] as CaseStudy[],
 

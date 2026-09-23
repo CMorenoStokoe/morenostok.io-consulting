@@ -31,7 +31,7 @@
 
 <div class="border border-black bg-black/[0.06] p-4 sm:p-6 space-y-4">
 	<!-- Header Telemetry Bar -->
-	<div class="flex items-center justify-between border-b border-black/20 pb-2.5 font-mono text-xs">
+	<div class="flex items-center border-b border-black/20 pb-2.5 font-mono text-xs">
 		<span class="font-bold uppercase tracking-widest text-black text-[11px]">
 			// Core Systems &amp; Model Engineering Stack
 		</span>
