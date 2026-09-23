@@ -58,7 +58,7 @@
 
 				<!-- Sub-headline -->
 				<p class="font-sans text-lg text-black leading-relaxed max-w-3xl mb-6">
-					I advise executive boards on AI strategy and build the secure, high-performance systems that drive them. From strategic alignment to sovereign data architecture, I turn complex technological ambition into measurable commercial reality.
+					Positioning enterprise leadership for an AI-driven future. I advise executive boards on AI strategy, manage proprietary intelligence build-outs, and drive enterprise transformations with a specialization in expert agents.
 				</p>
 
 				<!-- Credentials Bar -->
