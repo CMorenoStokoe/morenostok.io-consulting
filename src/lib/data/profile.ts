@@ -326,11 +326,11 @@ export const PROFILE_DATA = {
 			location: 'London & Belfast',
 			title: 'PwC "LinkedIn": Enterprise Resource Searcher & Cloud AI Integration',
 			challenge: 'PwC Operate partners and resource managers spent up to 8 hours per project role manually combing through spreadsheets and CV repositories to staff engagements across thousands of practitioners, while the firm needed accelerated adoption of cloud AI infrastructure.',
-			solution: 'Served as GCP Ambassador for PwC, driving firm-wide Google Cloud integration by founding a 200+ member global community for sharing cloud AI experiences and adoption. Attended Google partner workshops representing the firm, fostered multiple internal AI developments, and engineered the PwC Resource Searcher to algorithmically match practitioners to client projects.',
+			solution: 'Served as GCP Ambassador for PwC, driving firm-wide Google Cloud integration by founding a 200+ member global community for cloud AI adoption and knowledge sharing. Represented the firm at Google partner workshops, catalyzed multiple internal AI initiatives, and engineered the PwC Resource Searcher to algorithmically match practitioners to client projects.',
 			impact: [
 				'High-throughput talent matching pipeline indexing 4,000+ practitioners, reducing staffing turnaround from 8 hours down to 2 hours (75% reduction)',
-				'GCP Ambassador for PwC: founded 200+ member global community for cloud AI adoption and represented the firm at Google partner workshops',
-				'Encouraged multiple high-impact internal developments and generated £1M+ in annual billed efficiency across operations'
+				'GCP Ambassador for PwC: founded a 200+ member global community for cloud AI adoption and represented the firm at Google partner workshops',
+				'Catalyzed multiple high-impact internal AI initiatives and generated £1M+ in annual billed efficiency across operations'
 			],
 			techStack: ['GCP', 'Vertex AI', 'BigQuery', 'React', 'Google Apps Script', 'JavaScript']
 		}

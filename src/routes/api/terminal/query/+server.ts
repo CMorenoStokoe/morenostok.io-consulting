@@ -22,13 +22,15 @@ Dr. Chris Moreno-Stokoe served as Sole Founding AI Engineer (2023 - 2026).
 		query.includes('pwc') ||
 		query.includes('linkedin') ||
 		query.includes('staffing') ||
-		query.includes('talent')
+		query.includes('talent') ||
+		query.includes('gcp') ||
+		query.includes('ambassador')
 	) {
 		responseText = `[LANGGRAPH // NODE: ENTERPRISE_PRACTICE_RETRIEVAL]
 Identified verified case study: <a href="#case-studies" class="text-white border-b border-[#3300FF] hover:text-[#3300FF]">PwC Operate AI Engineering</a>.
 Dr. Chris Moreno-Stokoe founded the AI Engineering team at PwC UK (2022) & served as GCP Ambassador:
-• Founded 200+ member global community accelerating Cloud AI adoption across the firm.
-• Represented PwC at Google partner workshops and catalyzed multiple internal AI developments.
+• Founded a 200+ member global community accelerating cloud AI adoption across the firm.
+• Represented PwC at Google partner workshops and catalyzed multiple internal AI initiatives.
 • Engineered the PwC Resource Searcher ("PwC LinkedIn"), indexing 4,000+ practitioners and cutting staffing turnaround by 75%.`;
 	} else if (
 		query.includes('ir35') ||

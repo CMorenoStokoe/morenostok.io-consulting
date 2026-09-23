@@ -76,7 +76,7 @@
 					</h3>
 
 					<p class="font-sans text-xs sm:text-sm text-black leading-relaxed">
-						Served as GCP Ambassador for PwC, driving firm-wide Google Cloud integration by founding a 200+ member global community for cloud AI adoption and knowledge sharing. Led partner workshops representing the firm, spurred multiple internal developments, and built algorithmic resource matching that slashed staffing times from 8h to 2h across 4,000 practitioners.
+						Served as GCP Ambassador for PwC, driving firm-wide Google Cloud integration by founding a 200+ member global community for cloud AI adoption and knowledge sharing. Represented the firm at Google partner workshops, catalyzed multiple internal AI initiatives, and built algorithmic resource matching that slashed staffing turnaround from 8h to 2h across 4,000 practitioners.
 					</p>
 				</div>
 
@@ -130,7 +130,7 @@
 						Algorithmic Resource Allocator
 					</h4>
 					<p class="font-sans text-xs text-black/85 leading-relaxed">
-						Replaced manual spreadsheet operations with high-speed talent search pipelines across 4,000 consultants, reducing matching time from 8h to 2h.
+						Replaced manual spreadsheet operations with high-speed talent search pipelines across 4,000 practitioners, reducing staffing turnaround from 8h to 2h.
 					</p>
 				</div>
 			</div>
