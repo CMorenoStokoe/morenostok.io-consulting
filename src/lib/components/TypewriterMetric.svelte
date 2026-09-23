@@ -2,143 +2,130 @@
 	import { onMount, onDestroy } from 'svelte';
 
 	interface Metric {
+		id: string;
 		headline: string;
 		label: string;
+		shortLabel: string;
 		description: string;
 	}
 
 	const METRICS: Metric[] = [
 		{
+			id: 'capital',
 			headline: '£1M+',
 			label: 'ANNUAL CAPITAL EFFICIENCY',
+			shortLabel: '£1M+ EFFICIENCY',
 			description: 'Leading projects to deliver AI efficiencies and eliminate legacy software costs.'
 		},
 		{
+			id: 'latency',
 			headline: '< 250ms',
 			label: 'ZERO-FRICTION DECISIONS',
+			shortLabel: '< 250ms QUERY',
 			description: 'Compressed quantitative risk queries from 30+ seconds to sub-second execution.'
 		},
 		{
+			id: 'retention',
 			headline: '100%',
 			label: 'TEAM RETENTION',
+			shortLabel: '100% RETENTION',
 			description: 'Built and scaled elite AI engineering divisions from 0-to-1.'
 		},
 		{
+			id: 'leadership',
 			headline: '4+ Years',
 			label: 'LEADING GENAI TEAMS',
+			shortLabel: '4+ YRS LEAD',
 			description: 'Founding and leading elite AI divisions at the forefront of next-gen solutions.'
 		}
 	];
 
 	let currentIndex = $state(0);
-	let displayedHeadline = $state('');
-	let showDetails = $state(false);
-	let timeoutId: ReturnType<typeof setTimeout> | null = null;
-	let isDestroyed = false;
+	let isPaused = $state(false);
+	let intervalId: ReturnType<typeof setInterval> | null = null;
 
-	function typeOut(text: string, charIdx: number, onComplete: () => void) {
-		if (isDestroyed) return;
-		if (charIdx <= text.length) {
-			displayedHeadline = text.slice(0, charIdx);
-			timeoutId = setTimeout(() => {
-				typeOut(text, charIdx + 1, onComplete);
-			}, 70);
-		} else {
-			onComplete();
-		}
+	function nextMetric() {
+		currentIndex = (currentIndex + 1) % METRICS.length;
 	}
 
-	function erase(onComplete: () => void) {
-		if (isDestroyed) return;
-		if (displayedHeadline.length > 0) {
-			displayedHeadline = displayedHeadline.slice(0, -1);
-			timeoutId = setTimeout(() => {
-				erase(onComplete);
-			}, 30);
-		} else {
-			onComplete();
-		}
-	}
-
-	function runCycle() {
-		if (isDestroyed) return;
-		const current = METRICS[currentIndex];
-		showDetails = false;
-
-		// 1. Type out headline
-		typeOut(current.headline, 1, () => {
-			if (isDestroyed) return;
-			// 2. Headline typed: fade in details below
-			showDetails = true;
-
-			// 3. Hold for reading
-			timeoutId = setTimeout(() => {
-				if (isDestroyed) return;
-				// 4. Fade out details below
-				showDetails = false;
-
-				// Wait for fade-out transition before erasing
-				timeoutId = setTimeout(() => {
-					if (isDestroyed) return;
-					// 5. Erase headline
-					erase(() => {
-						if (isDestroyed) return;
-						// 6. Switch to next metric & loop
-						currentIndex = (currentIndex + 1) % METRICS.length;
-						timeoutId = setTimeout(runCycle, 200);
-					});
-				}, 400);
-			}, 3500);
-		});
+	function selectMetric(index: number) {
+		currentIndex = index;
 	}
 
 	onMount(() => {
-		runCycle();
+		intervalId = setInterval(() => {
+			if (!isPaused) {
+				nextMetric();
+			}
+		}, 4200);
 	});
 
 	onDestroy(() => {
-		isDestroyed = true;
-		if (timeoutId) clearTimeout(timeoutId);
+		if (intervalId) clearInterval(intervalId);
 	});
 </script>
 
-<div class="w-full bg-white border border-black p-3 sm:p-4 space-y-2 sm:space-y-3 font-mono text-black">
+<div
+	class="w-full bg-white border border-black p-3 sm:p-3.5 space-y-2.5 font-mono text-black select-none"
+	onmouseenter={() => (isPaused = true)}
+	onmouseleave={() => (isPaused = false)}
+	role="region"
+	aria-label="Audited Performance Metrics"
+>
 	<!-- Header Telemetry Row -->
-	<div class="flex items-center justify-between gap-2 border-b border-black/20 pb-1.5 sm:pb-2">
+	<div class="flex items-center justify-between gap-2 border-b border-black/20 pb-1.5">
 		<span class="text-[9px] uppercase font-bold tracking-widest text-black">
 			// AUDITED METRICS
 		</span>
 		<span class="text-[9px] font-bold text-[#3300FF]">
-			[0{currentIndex + 1}/04]
+			[0{currentIndex + 1}/0{METRICS.length}]
 		</span>
 	</div>
 
-	<!-- Headline with Typewriter Cursor -->
-	<div class="min-h-[32px] sm:min-h-[40px] flex items-center font-sans font-bold text-xl sm:text-3xl text-black tracking-tight">
-		<span>{displayedHeadline}</span>
-		<span class="inline-block w-2 sm:w-2.5 h-5 sm:h-6 bg-[#3300FF] ml-1.5 animate-pulse"></span>
+	<!-- Static Titles as Interactive Tabs -->
+	<div class="grid grid-cols-2 gap-1 sm:gap-1.5" role="tablist">
+		{#each METRICS as metric, idx}
+			<button
+				type="button"
+				role="tab"
+				aria-selected={idx === currentIndex}
+				onclick={() => selectMetric(idx)}
+				class="text-left px-2 py-1 sm:py-1.5 border transition-all duration-150 cursor-pointer flex flex-col {idx === currentIndex
+					? 'border-black bg-black text-white'
+					: 'border-black/20 bg-white text-black/60 hover:text-black hover:border-black/50'}"
+			>
+				<span class="text-[8px] sm:text-[9px] tracking-tight uppercase font-mono font-bold leading-none truncate w-full">
+					{metric.shortLabel}
+				</span>
+			</button>
+		{/each}
 	</div>
 
-	<!-- Fading Details: Label & Description -->
-	<div
-		class="space-y-1 sm:space-y-1.5 transition-opacity duration-500 ease-in-out min-h-[58px] sm:min-h-[72px]"
-		class:opacity-100={showDetails}
-		class:opacity-0={!showDetails}
-	>
-		<div class="font-mono text-[9px] sm:text-[11px] font-bold uppercase tracking-wider text-black">
-			{METRICS[currentIndex].label}
+	<!-- Dynamic Active Metric Content Card -->
+	<div class="pt-1 space-y-1">
+		<div class="flex items-baseline gap-2">
+			<div class="font-sans font-bold text-2xl sm:text-3xl text-black tracking-tight leading-none">
+				{METRICS[currentIndex].headline}
+			</div>
+			<div class="font-mono text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-[#3300FF]">
+				{METRICS[currentIndex].label}
+			</div>
 		</div>
-		<p class="font-sans text-[11px] sm:text-xs text-black/90 leading-relaxed">
+
+		<p class="font-sans text-xs text-black/80 leading-relaxed min-h-[40px] sm:min-h-[44px]">
 			{METRICS[currentIndex].description}
 		</p>
 	</div>
 
-	<!-- Progress Indicators -->
-	<div class="flex items-center gap-1.5 pt-1">
+	<!-- Progress / Scroller Indicator Strip -->
+	<div class="flex items-center gap-1 pt-1">
 		{#each METRICS as _, idx}
-			<div
-				class="h-1 transition-all duration-300 {idx === currentIndex ? 'w-6 bg-[#3300FF]' : 'w-2 bg-black/20'}"
-			></div>
+			<button
+				type="button"
+				aria-label="Switch to metric {idx + 1}"
+				onclick={() => selectMetric(idx)}
+				class="h-1 transition-all duration-300 rounded-none cursor-pointer {idx === currentIndex ? 'w-8 bg-[#3300FF]' : 'w-2 bg-black/20 hover:bg-black/50'}"
+			></button>
 		{/each}
 	</div>
 </div>
