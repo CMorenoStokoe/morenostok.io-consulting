@@ -72,16 +72,6 @@
 	role="region"
 	aria-label="Audited Performance Metrics"
 >
-	<!-- Header Telemetry Row -->
-	<div class="flex items-center justify-between gap-2 border-b border-black/20 pb-1.5">
-		<span class="text-[9px] uppercase font-bold tracking-widest text-black">
-			// AUDITED METRICS
-		</span>
-		<span class="text-[9px] font-bold text-[#3300FF]">
-			[0{currentIndex + 1}/0{METRICS.length}]
-		</span>
-	</div>
-
 	<!-- Static Titles as Interactive Tabs -->
 	<div class="grid grid-cols-2 gap-1 sm:gap-1.5" role="tablist">
 		{#each METRICS as metric, idx}
@@ -102,7 +92,7 @@
 	</div>
 
 	<!-- Dynamic Active Metric Content Card -->
-	<div class="pt-1 space-y-1">
+	<div class="pt-0.5 space-y-1">
 		<div class="flex items-baseline gap-2">
 			<div class="font-sans font-bold text-2xl sm:text-3xl text-black tracking-tight leading-none">
 				{METRICS[currentIndex].headline}
@@ -117,15 +107,20 @@
 		</p>
 	</div>
 
-	<!-- Progress / Scroller Indicator Strip -->
-	<div class="flex items-center gap-1 pt-1">
-		{#each METRICS as _, idx}
-			<button
-				type="button"
-				aria-label="Switch to metric {idx + 1}"
-				onclick={() => selectMetric(idx)}
-				class="h-1 transition-all duration-300 rounded-none cursor-pointer {idx === currentIndex ? 'w-8 bg-[#3300FF]' : 'w-2 bg-black/20 hover:bg-black/50'}"
-			></button>
-		{/each}
+	<!-- Footer: Progress / Scroller Indicator Strip & Pagecount -->
+	<div class="flex items-center justify-between gap-2 pt-1 border-t border-black/10">
+		<div class="flex items-center gap-1">
+			{#each METRICS as _, idx}
+				<button
+					type="button"
+					aria-label="Switch to metric {idx + 1}"
+					onclick={() => selectMetric(idx)}
+					class="h-1 transition-all duration-300 rounded-none cursor-pointer {idx === currentIndex ? 'w-8 bg-[#3300FF]' : 'w-2 bg-black/20 hover:bg-black/50'}"
+				></button>
+			{/each}
+		</div>
+		<span class="text-[9px] font-mono font-bold text-[#3300FF]">
+			[0{currentIndex + 1}/0{METRICS.length}]
+		</span>
 	</div>
 </div>
