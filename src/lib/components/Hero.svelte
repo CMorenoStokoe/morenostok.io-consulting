@@ -28,11 +28,10 @@
 		}
 	}
 
-	const METRICS = [
-		{ value: '£1M+', label: 'Annual AI Efficiency' },
-		{ value: '< 250ms', label: 'Query Latency' },
-		{ value: '100%', label: 'Team Retention' },
-		{ value: '4+ Yrs', label: 'Leading GenAI Teams' }
+	const SHIELDS = [
+		{ value: '4 Years',  line1: 'Leading GenAI',    line2: 'Teams' },
+		{ value: '100%',     line1: 'Employee',          line2: 'Retention' },
+		{ value: 'AI Ready', line1: 'Sub-second Data',   line2: 'Architecture' }
 	];
 </script>
 
@@ -40,7 +39,7 @@
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex flex-col md:flex-row items-start gap-6 sm:gap-8 lg:gap-12 pb-12 sm:pb-16">
 			<!-- Left Column: Dawnbreak Dotmatrix Insignia -->
-			<div class="shrink-0 flex items-start justify-center md:justify-start relative md:-mt-6 lg:-mt-10">
+			<div class="shrink-0 hidden md:flex items-start justify-start relative md:-mt-6 lg:-mt-10">
 				<div class="w-32 h-32 sm:w-44 sm:h-44 md:w-52 md:h-52 lg:w-60 lg:h-60">
 					<DawnbreakMatrix />
 				</div>
@@ -62,20 +61,34 @@
 					Positioning enterprise leadership for an AI-driven future. I advise executive boards on AI strategy, manage proprietary intelligence build-outs, and drive enterprise transformations with a specialization in expert agents.
 				</p>
 
-				<!-- Static Metric Badges -->
-				<div class="flex flex-wrap gap-3 mb-8">
-					{#each METRICS as metric}
-						<div class="border border-black px-3 py-2 font-mono flex flex-col">
-							<span class="text-xl sm:text-2xl font-bold text-black leading-none">{metric.value}</span>
-							<span class="text-[9px] uppercase tracking-widest text-black/60 mt-0.5">{metric.label}</span>
-						</div>
-					{/each}
+				<!-- Metrics: plain stat + 3 shield badges -->
+				<div class="flex flex-col sm:flex-row sm:items-end gap-5 sm:gap-6 mb-8">
+
+					<!-- Plain stat — no border -->
+					<div class="font-mono flex flex-col">
+						<span class="text-2xl sm:text-3xl font-bold text-black leading-none">£1M+</span>
+						<span class="text-[9px] uppercase tracking-widest text-black/50 mt-1">Annual AI Efficiency</span>
+					</div>
+
+					<!-- Shield badges -->
+					<div class="flex flex-row items-end gap-2 sm:gap-4 flex-nowrap w-full sm:w-auto">
+						{#each SHIELDS as shield}
+							<div
+								class="flex flex-col items-center justify-start bg-[#012148] text-white font-mono flex-1 sm:flex-none w-auto sm:w-[88px] min-w-0 h-[96px] sm:h-[108px] pt-3.5 sm:pt-5 gap-0.5 sm:gap-1"
+								style="clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);"
+							>
+								<span class="text-xs sm:text-base md:text-lg font-bold leading-none tracking-tight text-center px-1 sm:px-2">{shield.value}</span>
+								<span class="text-[6.5px] sm:text-[7px] uppercase tracking-wider text-white/60 text-center px-1 sm:px-2 leading-snug mt-0.5">{shield.line1}<br/>{shield.line2}</span>
+							</div>
+						{/each}
+					</div>
+
 				</div>
 
 				<!-- CTA Actions -->
 				<div class="flex flex-wrap items-center gap-4">
 					<LinkedInConnectButton
-						text="[ CONNECT ON LINKEDIN ]"
+						text="CONNECT ON LINKEDIN"
 						size="lg"
 						variant="hero"
 					/>
@@ -86,7 +99,7 @@
 							class="inline-flex items-center justify-center gap-2 rounded-none bg-white text-black hover:bg-black hover:text-white border border-black px-6 py-3.5 font-mono text-xs font-semibold uppercase tracking-wider transition-all min-h-[48px] cursor-pointer"
 						>
 							<Mail class="w-4 h-4 shrink-0" />
-							<span>{emailCopied ? '[ EMAIL COPIED! ]' : '[ DIRECT EMAIL ]'}</span>
+							<span>{emailCopied ? 'EMAIL COPIED!' : 'DIRECT EMAIL'}</span>
 						</button>
 					{/if}
 				</div>

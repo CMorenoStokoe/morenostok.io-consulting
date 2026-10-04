@@ -17,7 +17,7 @@ Identified verified case study: <a href="#case-studies" class="text-white border
 Dr. Chris Moreno-Stokoe served as Sole Founding AI Engineer (2023 - 2026).
 • Replaced legacy enterprise BI tooling ($1M+/yr displaced software costs) via in-memory DuckDB OLAP engine.
 • Reduced portfolio query latency from 30+ seconds down to <250ms for front-office trading desks.
-• Built firm-wide Sovereign AI Chat & Model Garden serving 60,000+ messages with 99.5% uptime.`;
+• Built firm-wide AI Chat & Model Garden serving 60,000+ messages with 99.5% uptime.`;
 	} else if (
 		query.includes('pwc') ||
 		query.includes('linkedin') ||

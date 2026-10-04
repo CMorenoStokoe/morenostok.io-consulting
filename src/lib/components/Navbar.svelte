@@ -2,6 +2,7 @@
 	import { ArrowUpRight, Menu, X } from '@lucide/svelte';
 	import { PROFILE_DATA } from '$lib/data/profile';
 	import LinkedInConnectButton from '$lib/components/LinkedInConnectButton.svelte';
+	import DawnbreakMatrix from '$lib/components/DawnbreakMatrix.svelte';
 
 	let mobileMenuOpen = $state(false);
 
@@ -15,13 +16,18 @@
 
 <header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md transition-all">
 	<div class="mx-auto flex h-16 sm:h-18 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-		<a href="/" class="flex flex-col group py-1">
-			<span class="text-xs sm:text-sm font-normal tracking-widest text-black uppercase font-sans">
-				{PROFILE_DATA.name}
-			</span>
-			<span class="text-[9px] sm:text-[10px] text-black font-mono tracking-wider uppercase font-normal">
-				AI Strategy & Technical Consultancy
-			</span>
+		<a href="/" class="flex items-center gap-2.5 sm:gap-3 group py-1">
+			<div class="w-8 h-8 sm:w-9 sm:h-9 shrink-0 md:hidden">
+				<DawnbreakMatrix />
+			</div>
+			<div class="flex flex-col">
+				<span class="text-xs sm:text-sm font-normal tracking-widest text-black uppercase font-sans">
+					{PROFILE_DATA.name}
+				</span>
+				<span class="text-[9px] sm:text-[10px] text-black font-mono tracking-wider uppercase font-normal">
+					AI Strategy & Technical Consultancy
+				</span>
+			</div>
 		</a>
 
 		<!-- Desktop Navigation -->

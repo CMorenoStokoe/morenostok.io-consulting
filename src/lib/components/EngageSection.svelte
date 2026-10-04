@@ -33,24 +33,27 @@
 
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-10">
 		<!-- Section Header -->
-		<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-2">
-			<div class="max-w-2xl space-y-2">
+		<div class="space-y-4 pb-2">
+			<!-- Kicker and Status Badge Row -->
+			<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-4">
 				<div class="font-mono text-xs uppercase tracking-widest text-black font-semibold">
 					// Get in Touch
 				</div>
+				<div>
+					<span class="inline-block bg-black text-white px-2.5 py-1 font-mono text-xs font-bold">
+						[OUTSIDE IR35 COMPLIANT]
+					</span>
+				</div>
+			</div>
+
+			<!-- Headline & description across full row -->
+			<div class="space-y-2 w-full">
 				<h2 class="text-2xl sm:text-3xl lg:text-4xl font-sans font-bold text-black tracking-tight">
 					Let's Discuss Your AI Initiatives
 				</h2>
-				<p class="text-sm sm:text-base text-black leading-relaxed">
+				<p class="text-sm sm:text-base text-black leading-relaxed w-full">
 					Available for executive advisory retainers, architectural roadmaps, and rapid proof-of-concept sprints.
 				</p>
-			</div>
-
-			<!-- Status Badges -->
-			<div class="flex flex-wrap items-center gap-2 font-mono text-xs">
-				<span class="bg-black text-white px-2.5 py-1 font-bold">
-					[OUTSIDE IR35 COMPLIANT]
-				</span>
 			</div>
 		</div>
 
