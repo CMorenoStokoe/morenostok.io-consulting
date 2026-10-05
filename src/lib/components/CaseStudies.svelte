@@ -147,16 +147,16 @@
 					</p>
 				</div>
 
-				<!-- System 3: PwC Searcher -->
+				<!-- System 3: Global Governments COVID-19 Simulation -->
 				<div class="bg-white border border-black p-4 space-y-2">
 					<div class="font-mono text-[10px] text-black uppercase font-bold">
-						PWC UK // TALENT ENGINE
+						GLOBAL GOVERNMENTS // COVID-19 SIMULATION
 					</div>
 					<h4 class="font-sans text-sm font-bold text-black leading-snug">
-						Algorithmic Resource Allocator
+						Interactive Standard Infection Rate Simulations
 					</h4>
 					<p class="font-sans text-xs text-black/85 leading-relaxed">
-						Replaced manual spreadsheet operations with high-speed talent search pipelines across 4,000 practitioners, reducing staffing turnaround from 8h to 2h.
+						Produced statistical COVID-19 modelling for the Governments of UK, Wales, US, Israel &amp; Ireland, as well as interactive modalities which allowed policy makers to visualise and interact with simulated COVID policies.
 					</p>
 				</div>
 			</div>
