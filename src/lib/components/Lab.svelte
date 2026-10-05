@@ -52,6 +52,50 @@
 		}
 	}
 
+	function initVideo(node: HTMLVideoElement) {
+		node.muted = true;
+		node.defaultMuted = true;
+		node.playsInline = true;
+		node.setAttribute('playsinline', 'true');
+		node.setAttribute('webkit-playsinline', 'true');
+
+		const attemptPlay = () => {
+			const promise = node.play();
+			if (promise !== undefined) {
+				promise.catch(() => {});
+			}
+		};
+
+		attemptPlay();
+		node.addEventListener('loadeddata', attemptPlay);
+		node.addEventListener('canplay', attemptPlay);
+
+		let observer: IntersectionObserver | null = null;
+		if (typeof IntersectionObserver !== 'undefined') {
+			observer = new IntersectionObserver(
+				(entries) => {
+					for (const entry of entries) {
+						if (entry.isIntersecting) {
+							attemptPlay();
+						} else {
+							node.pause();
+						}
+					}
+				},
+				{ threshold: 0.1 }
+			);
+			observer.observe(node);
+		}
+
+		return {
+			destroy() {
+				if (observer) observer.disconnect();
+				node.removeEventListener('loadeddata', attemptPlay);
+				node.removeEventListener('canplay', attemptPlay);
+			}
+		};
+	}
+
 	onMount(() => {
 		animId = requestAnimationFrame(autoScrollStep);
 	});
@@ -217,9 +261,30 @@
 						</div>
 					</div>
 
-					<!-- Landscape Picture: Consistent 16:9 Dimension -->
-					<div class="aspect-video w-full overflow-hidden border border-black bg-black">
-						{#if project.image}
+					<!-- Landscape Video/Image Preview: Consistent 16:9 Dimension -->
+					<div class="aspect-video w-full overflow-hidden border border-black bg-black relative">
+						{#if project.videoUrl}
+							<video
+								src={project.videoUrl}
+								poster={project.image}
+								autoplay
+								loop
+								muted
+								playsinline
+								preload="auto"
+								use:initVideo
+								class="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-300"
+							>
+								{#if project.image}
+									<img
+										src={project.image}
+										alt="{project.title} landscape preview"
+										class="w-full h-full object-cover object-top"
+										loading="lazy"
+									/>
+								{/if}
+							</video>
+						{:else if project.image}
 							<img
 								src={project.image}
 								alt="{project.title} landscape preview"

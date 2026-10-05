@@ -55,6 +55,7 @@ export interface PortfolioProject {
 	url?: string;
 	githubUrl?: string;
 	image?: string;
+	videoUrl?: string;
 	links?: ProjectLink[];
 	highlights: string[];
 }
@@ -386,6 +387,7 @@ export const PROFILE_DATA = {
 			url: 'https://time-portals.vercel.app',
 			githubUrl: 'https://github.com/CMorenoStokoe/time-portals',
 			image: '/images/products/time-portals-screen.png',
+			videoUrl: '/videos/video-time-portals.mp4',
 			description: 'Multi-modal agent flow bringing historical paper archives to life, extracting landmarks and generating 3D spatial reconstructions.',
 			highlights: [
 				'Multi-modal agent flow for historical paper record extraction and indexing',
@@ -401,6 +403,7 @@ export const PROFILE_DATA = {
 			url: 'https://astro-json-chi.vercel.app/',
 			githubUrl: 'https://github.com/CMorenoStokoe/astroJSON',
 			image: '/images/products/astro-json-screen.png',
+			videoUrl: '/videos/video-astrojson-galaxy.mp4',
 			description: 'Exploring network graph-based structures for extremely large datasets. Developed a Neo4J schema for storing, retrieving, and visualising 4-D celestial data.',
 			highlights: [
 				'Replaces flat GeoJSON with high-performance graph traversals for dynamic coordinates',
@@ -416,6 +419,7 @@ export const PROFILE_DATA = {
 			url: 'https://live-another-life.vercel.app',
 			githubUrl: 'https://github.com/CMorenoStokoe/Dauntless-AI',
 			image: '/images/products/live-another-life.png',
+			videoUrl: '/videos/video-live-another-life.mp4',
 			description: 'Autonomous multi-modal agent flow synthesizing coherent alter-egos, artificial lifespans, and dynamic social media footprints from zero prompt seeds.',
 			highlights: [
 				'Generates full-spectrum digital identities, backgrounds, and narrative chronologies',
@@ -431,6 +435,7 @@ export const PROFILE_DATA = {
 			url: 'https://meteor-shower.vercel.app',
 			githubUrl: 'https://github.com/CMorenoStokoe/Dauntless-AI',
 			image: '/images/products/meteor-shower.png',
+			videoUrl: '/videos/video-meteor-shower.mp4',
 			description: 'AI rocket swarm architecture that translates high-level prompts into fully responsive, production-ready web interfaces in real-time.',
 			highlights: [
 				'Coordinated swarm of specialized agent rockets handling layout, copy, and styling',
@@ -446,6 +451,7 @@ export const PROFILE_DATA = {
 			url: 'https://zyzyx-quadrant.vercel.app',
 			githubUrl: 'https://github.com/CMorenoStokoe/Dauntless-AI',
 			image: '/images/products/zyzyx-screen.png',
+			videoUrl: '/videos/video-zyzyx.webm',
 			description: 'Procedural runtime state machine exploring real-time GenAI decision trees, dynamic interface styling, and game logic orchestration.',
 			highlights: [
 				'Procedural generation of complex game spaces and multi-path narrative trees',
