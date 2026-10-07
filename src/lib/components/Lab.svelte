@@ -42,12 +42,69 @@
 		animId = requestAnimationFrame(autoScrollStep);
 	}
 
+	let isDragging = $state(false);
+	let startX = 0;
+	let startScrollLeft = 0;
+	let dragMoved = false;
+
 	function handleUserInteraction() {
 		if (!userInteracted) {
 			userInteracted = true;
 			if (animId) {
 				cancelAnimationFrame(animId);
 				animId = null;
+			}
+		}
+	}
+
+	function scrollByAmount(amount: number) {
+		handleUserInteraction();
+		if (scrollContainer) {
+			scrollContainer.scrollBy({ left: amount, behavior: 'smooth' });
+		}
+	}
+
+	function handlePointerDown(e: PointerEvent) {
+		handleUserInteraction();
+		if (!scrollContainer) return;
+		if (e.pointerType === 'mouse' && e.button !== 0) return;
+		isDragging = true;
+		dragMoved = false;
+		startX = e.clientX;
+		startScrollLeft = scrollContainer.scrollLeft;
+	}
+
+	function handlePointerMove(e: PointerEvent) {
+		if (!isDragging || !scrollContainer) return;
+		const dx = e.clientX - startX;
+		if (Math.abs(dx) > 4) {
+			dragMoved = true;
+		}
+		scrollContainer.scrollLeft = startScrollLeft - dx;
+	}
+
+	function handlePointerUp() {
+		isDragging = false;
+	}
+
+	function handleClickCapture(e: MouseEvent) {
+		if (dragMoved) {
+			e.preventDefault();
+			e.stopPropagation();
+			dragMoved = false;
+		}
+	}
+
+	function handleWheel(e: WheelEvent) {
+		handleUserInteraction();
+		if (scrollContainer && Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+			const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+			const canScroll =
+				(e.deltaY > 0 && scrollContainer.scrollLeft < maxScroll - 1) ||
+				(e.deltaY < 0 && scrollContainer.scrollLeft > 1);
+			if (canScroll) {
+				scrollContainer.scrollLeft += e.deltaY;
+				e.preventDefault();
 			}
 		}
 	}
@@ -215,24 +272,47 @@
 		</div>
 
 		<!-- Horizontal Carousel Gallery Container -->
-		<div class="space-y-2">
-			<div class="font-mono text-[10px] text-black/50 uppercase tracking-widest font-semibold">
-				[SWIPE / SCROLL TO EXPLORE]
+		<div class="space-y-3">
+			<div class="flex items-center justify-between font-mono text-xs">
+				<div class="text-[10px] text-black/50 uppercase tracking-widest font-semibold flex items-center gap-2">
+					<span>[SWIPE / SCROLL TO EXPLORE]</span>
+				</div>
+
+				<!-- Desktop Scroll Controls -->
+				<div class="hidden sm:flex items-center gap-2">
+					<button
+						type="button"
+						onclick={() => scrollByAmount(-460)}
+						class="px-2.5 py-1 bg-white hover:bg-black text-black hover:text-white border border-black font-mono text-[11px] font-bold uppercase tracking-wider transition-colors cursor-pointer"
+						aria-label="Previous project"
+					>
+						[ &larr; PREV ]
+					</button>
+					<button
+						type="button"
+						onclick={() => scrollByAmount(460)}
+						class="px-2.5 py-1 bg-white hover:bg-black text-black hover:text-white border border-black font-mono text-[11px] font-bold uppercase tracking-wider transition-colors cursor-pointer"
+						aria-label="Next project"
+					>
+						[ NEXT &rarr; ]
+					</button>
+				</div>
 			</div>
 
 			<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 			<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 			<div
 				bind:this={scrollContainer}
-				onmouseenter={handleUserInteraction}
-				ontouchstart={handleUserInteraction}
-				onpointerdown={handleUserInteraction}
-				onwheel={handleUserInteraction}
+				onpointerdown={handlePointerDown}
+				onpointermove={handlePointerMove}
+				onpointerup={handlePointerUp}
+				onpointercancel={handlePointerUp}
+				onclickcapture={handleClickCapture}
+				onwheel={handleWheel}
 				tabindex="0"
 				role="region"
 				aria-label="Product gallery carousel"
-				class="flex gap-6 overflow-x-auto pb-6 pt-1 scroll-smooth no-scrollbar focus:outline-none"
-				style="scrollbar-width: none; -ms-overflow-style: none;"
+				class="lab-carousel flex gap-6 overflow-x-auto pb-4 pt-1 focus:outline-none select-none sm:select-auto cursor-grab active:cursor-grabbing"
 			>
 			{#each PROFILE_DATA.portfolioProjects as project, idx}
 				<article
@@ -385,8 +465,37 @@
 </section>
 
 <style>
-	/* Hide scrollbar for Chrome, Safari and Opera */
-	.no-scrollbar::-webkit-scrollbar {
-		display: none;
+	/* Physical brutalist scrollbar for desktop */
+	.lab-carousel {
+		scrollbar-width: thin;
+		scrollbar-color: #012148 rgba(1, 33, 72, 0.12);
+	}
+
+	.lab-carousel::-webkit-scrollbar {
+		height: 8px;
+	}
+
+	.lab-carousel::-webkit-scrollbar-track {
+		background: rgba(1, 33, 72, 0.06);
+		border: 1px solid rgba(1, 33, 72, 0.25);
+	}
+
+	.lab-carousel::-webkit-scrollbar-thumb {
+		background: #012148;
+		border-radius: 0;
+	}
+
+	.lab-carousel::-webkit-scrollbar-thumb:hover {
+		background: #3300FF;
+	}
+
+	@media (max-width: 640px) {
+		.lab-carousel {
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+		}
+		.lab-carousel::-webkit-scrollbar {
+			display: none;
+		}
 	}
 </style>
